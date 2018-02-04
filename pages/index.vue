@@ -29,34 +29,37 @@
     <div class="apply-form">
       <div class="title">APPLY TO NODE</div>
       <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
-      <div class="row">
-        <div class="column first-name input-group" label="First name">
+      <form>
+        <div class="row">
+          <div class="column first-name input-group" label="First name">
+            <input class="input-box" type="text">
+          </div>
+          <div class="column second-name input-group" label="Last name">
+            <input class="input-box" type="text">
+          </div>
+        </div>
+        <div class="email input-group" label="Email">
           <input class="input-box" type="text">
         </div>
-        <div class="column second-name input-group" label="Last name">
+        <div class="social input-group" label="Social accounts (Facebook, Instagram, Twitter, Steemit, etc.)">
           <input class="input-box" type="text">
         </div>
-      </div>
-      <div class="email input-group" label="Email">
-        <input class="input-box" type="text">
-      </div>
-      <div class="social input-group" label="Social accounts (Facebook, Instagram, Twitter, Steemit, etc.)">
-        <input class="input-box" type="text">
-      </div>
-      <div class="phone input-group" label="Phone">
-        <input class="input-box phone-box" type="text">
-        <input class="input-box phone-box" type="text">
-        <input class="input-box phone-box" type="text">
-      </div>
-      <div class="express input-group" label="What three links express you best?">
-        <input class="input-box" type="text">
-      </div>
-      <div class="accomplishment input-group" label="What creative accomplishment are you most pround of?">
-        <input class="input-box" type="text">
-      </div>
-      <div class="contribute input-group" label="With what do you see yourself contributing to Node?">
-        <input class="input-box" type="text">
-      </div>
+        <div class="phone input-group" label="Phone">
+          <input class="input-box phone-box" type="text" maxlength="3" @keyup="phoneValidator($event, 3, 0)">
+          <input class="input-box phone-box" type="text" maxlength="3" @keyup="phoneValidator($event, 3, 1)">
+          <input class="input-box phone-box" type="text" maxlength="4" @keyup="phoneValidator($event, 4, 2)">
+        </div>
+        <div class="express input-group" label="What three links express you best?">
+          <input class="input-box" type="text">
+        </div>
+        <div class="accomplishment input-group" label="What creative accomplishment are you most pround of?">
+          <input class="input-box" type="text">
+        </div>
+        <div class="contribute input-group" label="With what do you see yourself contributing to Node?">
+          <input class="input-box" type="text">
+        </div>
+        <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
+      </form>
     </div>
     <div class="footer">Part of the NodeWorldwide Network</div>
   </div>
@@ -66,8 +69,23 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
+  methods: {
+    phoneValidator (e, maxLength, boxIndex) {
+      const el = e.target
+      const value = el.value
+      const lastChar = parseInt(value.slice(-1))
+      if (lastChar >= 0 && lastChar <= 9) {
+        switch (e.keyCode) {
+        case 8: 
+          if (boxIndex !== 0 && value.length === 0) el.previousElementSibling.focus()
+          return
+        default:
+          if (value.length >= maxLength && boxIndex !== 2) el.nextElementSibling.focus()
+        }
+      } else {
+        el.value = value.substring(0, value.length - 2)
+      }
+    }
   }
 }
 </script>
@@ -172,7 +190,22 @@ export default {
 .phone-box {
   margin-top: 0;
   margin-right: 10px;
-  max-width: 50px;
+  max-width: 60px;
+}
+.submit-btn {
+  margin: 20px 10px;
+  padding: 0 20px;
+  height: 40px;
+  background: #424242;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.submit-btn:hover{
+  background: #212121;
+}
+.submit-btn:active {
+  background: #000;
 }
 
 .footer {
