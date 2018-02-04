@@ -61,7 +61,7 @@
         <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
       </form>
     </div>
-    <div class="footer">Part of the NodeWorldwide Network</div>
+    <div class="footer"><a href="https://nodeworldwide.com">Veried Node of a Worldwide Network</a></div>
   </div>
 </template>
 
