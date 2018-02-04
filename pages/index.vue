@@ -1,7 +1,65 @@
 <template>
-  <section class="container">
-    <!-- nothing to see here -->
-  </section>
+  <div class="landing">
+    <div class="landing-header">
+      <div class="brand"><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
+    </div>
+    <div class="slogan">a burner/crypto/blockchain lounge coded on the blockchain</div>
+    <div class="benefits">
+      <div class="title">BENEFITS</div>
+      <div class="row">
+        <div class="column">
+          <ul class="benefit-list">
+            <li>$200 / month</li>
+            <li>200 members per space</li>
+            <li>Encoded on the blockchain</li>
+            <li>ERC-721 token for each member</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="benefit-list">
+            <li>24/7 access to a shared collaboration space</li>
+            <li>Unique food and drinks</li>
+            <li>Super fast wifi</li>
+            <li>Exceptional content series for the crypto-curious</li>
+            <li>Access to every other Node around the world</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="apply-form">
+      <div class="title">APPLY TO NODE</div>
+      <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
+      <div class="row">
+        <div class="column first-name input-group" label="First name">
+          <input class="input-box" type="text">
+        </div>
+        <div class="column second-name input-group" label="Last name">
+          <input class="input-box" type="text">
+        </div>
+      </div>
+      <div class="email input-group" label="Email">
+        <input class="input-box" type="text">
+      </div>
+      <div class="social input-group" label="Social accounts (Facebook, Instagram, Twitter, Steemit, etc.)">
+        <input class="input-box" type="text">
+      </div>
+      <div class="phone input-group" label="Phone">
+        <input class="input-box phone-box" type="text">
+        <input class="input-box phone-box" type="text">
+        <input class="input-box phone-box" type="text">
+      </div>
+      <div class="express input-group" label="What three links express you best?">
+        <input class="input-box" type="text">
+      </div>
+      <div class="accomplishment input-group" label="What creative accomplishment are you most pround of?">
+        <input class="input-box" type="text">
+      </div>
+      <div class="contribute input-group" label="With what do you see yourself contributing to Node?">
+        <input class="input-box" type="text">
+      </div>
+    </div>
+    <div class="footer">Part of the NodeWorldwide Network</div>
+  </div>
 </template>
 
 <script>
@@ -14,33 +72,119 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
+<style scoped>
+.row {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.column {
+  flex: 1;
+}
+
+.landing-header {
+  background-image: url(~/assets/feature-img.png);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+.brand {
+  padding: 24px;
+}
+.logo {
+  height: 40px;
+}
+.slogan {
+  padding: 100px 20px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2.4vw;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.benefits {
+  padding: 60px 24px;
+  background: #ededed;
+  text-align: center;
+}
+.benefits .title {
+  margin-bottom: 40px;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+.benefits .row {
+  margin: auto;
+  max-width: 840px;
+}
+.benefit-list {
+  padding: 0;
+  list-style: none;
+}
+.benefit-list li {
+  padding: 10px 24px;
+  font-size: .9em;
   text-align: center;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+.apply-form {
+  margin: auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.apply-form .title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.apply-form .subtitle {
+  margin-bottom: 40px;
+  font-size: .8em;
+  text-align: center;
+  color: #424242;
+}
+
+.input-group {
+  padding: 20px 10px;
+  color: #424242;
+}
+.input-group:before {
+  content: attr(label);
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  margin-bottom: 4px;
+  font-size: .8em;
+  line-height: 1.2em;
+  color: #212121;
+}
+.input-box {
+  margin-top: 10px;
+  padding: 0 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #616161;
+  outline: none;
+}
+.input-group .input-box:first-child {
+  margin-top: 0;
+}
+.phone-box {
+  margin-top: 0;
+  margin-right: 10px;
+  max-width: 50px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.footer {
+  padding: 40px 0;
+  font-size: 12px;
+  color: #a5a5a5;
+  text-align: center;
 }
 
-.links {
-  padding-top: 15px;
+@media (max-width: 767px) {
+  .slogan {
+    font-size: 6vw;
+  }
 }
 </style>

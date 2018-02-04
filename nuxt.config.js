@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'A decentralized crypto lounge.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
     ]
   },
   /*
