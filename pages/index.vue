@@ -3,7 +3,7 @@
     <div class="landing-header">
       <div class="brand"><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
     </div>
-    <div class="slogan">a burner/crypto/blockchain lounge coded on the blockchain</div>
+    <div class="slogan">a blockchain based decentralized space</div>
     <div class="benefits">
       <div class="title">BENEFITS</div>
       <div class="row">
@@ -76,7 +76,7 @@ export default {
       const lastChar = parseInt(value.slice(-1))
       if (lastChar >= 0 && lastChar <= 9) {
         switch (e.keyCode) {
-        case 8: 
+        case 8:
           if (boxIndex !== 0 && value.length === 0) el.previousElementSibling.focus()
           return
         default:
