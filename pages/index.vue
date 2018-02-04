@@ -3,18 +3,32 @@
     <div class="landing-header">
       <div class="brand"><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
     </div>
-    <div class="slogan">a blockchain based decentralized space</div>
-    <div class="benefits">
-      <div class="title">BENEFITS</div>
+    <div class="slogan">
+      <div class="title">Blockchain Based Decentralized Space</div>
       <div class="row">
         <div class="column">
-          <ul class="benefit-list">
-            <li>$200 / month</li>
-            <li>200 members per space</li>
-            <li>Encoded on the blockchain</li>
+          <ul class="slogan-list">
+            <li><span>Encoded on the blockchain</span></li>
             <li>ERC-721 token for each member</li>
           </ul>
         </div>
+        <div class="column">
+          <ul class="slogan-list">
+            <li><span>Exceptional content series for the crypto-curious</span></li>
+            <li>Access to every other Node around the world</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="slogan-list">
+            <li><span>Encoded on the blockchain</span></li>
+            <li>ERC-721 token for each member</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="title">BENEFITS</div>
+      <div class="row">
         <div class="column">
           <ul class="benefit-list">
             <li>24/7 access to a shared collaboration space</li>
@@ -99,10 +113,10 @@ export default {
 }
 
 .landing-header {
-  background-image: url(~/assets/feature-img.png);
+  background-image: url(~/assets/glitch-bk.png);
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
 }
 .brand {
   padding: 24px;
@@ -110,13 +124,13 @@ export default {
 .logo {
   height: 40px;
 }
-.slogan {
+/* .slogan {
   padding: 100px 20px;
   font-family: 'Archivo Black', sans-serif;
   font-size: 2.4vw;
   text-align: center;
   letter-spacing: 2px;
-}
+} */
 .highlight {
   text-decoration: none;
   color: #ccc;
@@ -124,13 +138,15 @@ export default {
 .benefits {
   padding: 60px 24px;
   background: #ededed;
-  text-align: center;
+  text-align: left;
 }
 .benefits .title {
+  margin: auto;
   margin-bottom: 40px;
   font-size: 1.4em;
   font-weight: 800;
   letter-spacing: 6px;
+  max-width: 840px;
 }
 .benefits .row {
   margin: auto;
@@ -141,9 +157,40 @@ export default {
   list-style: none;
 }
 .benefit-list li {
+  padding: 10px 0;
+  font-size: .9em;
+  text-align: left;
+}
+
+
+.slogan{
+  padding: 60px 24px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.slogan .title {
+  margin-bottom: 40px;
+  padding-left: 24px;
+  text-align: left;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+.slogan .row {
+  margin: auto;
+  max-width: 1000px;
+}
+.slogan-list {
+  padding: 0;
+  list-style: none;
+}
+.slogan-list li {
   padding: 10px 24px;
   font-size: .9em;
-  text-align: center;
+  text-align: left;
+}
+.slogan-list li span{
+  font-family: times, serif;
 }
 
 .apply-form {
@@ -199,16 +246,16 @@ export default {
   margin: 20px 10px;
   padding: 0 20px;
   height: 40px;
-  background: #424242;
+  background: #D90086;
   border: none;
   color: #fff;
   outline: none;
 }
 .submit-btn:hover{
-  background: #212121;
+  background: #93005B;
 }
 .submit-btn:active {
-  background: #000;
+  background: #D90086;
 }
 
 .footer {
