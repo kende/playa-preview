@@ -61,7 +61,7 @@
         <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
       </form>
     </div>
-    <div class="footer"><a href="https://nodeworldwide.com">Veried Node of a Worldwide Network</a></div>
+    <div class="footer">Node:02 in the Node Network | <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:Origin</span></a></div>
   </div>
 </template>
 
@@ -117,7 +117,10 @@ export default {
   text-align: center;
   letter-spacing: 2px;
 }
-
+.highlight {
+  text-decoration: none;
+  color: #ccc;
+}
 .benefits {
   padding: 60px 24px;
   background: #ededed;
