@@ -18,4 +18,20 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+@font-face {
+  font-family: "arame-regular";
+  src: url("~/assets/fonts/arame-regular.woff") format("woff")
+}
+@font-face {
+  font-family: "rational-light";
+  src: url("~/assets/fonts/rational-light.woff") format("woff")
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 1;
+}
 </style>
