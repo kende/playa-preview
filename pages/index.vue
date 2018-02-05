@@ -1,8 +1,12 @@
 <template>
   <div class="landing">
     <div class="landing-header">
-      <div class="brand"><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div>
+      <div class="brand">
+        <a href="">
+          <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
+        </a>
+      </div>
+      <div class="text">
         <div></div>
         <div></div>
         <a class="apply-btn" href="#apply-form">APPLY</a>
@@ -133,13 +137,14 @@ export default {
   background-image: url(~/assets/glitch-bk.png);
   background-position: center;
   background-size: cover;
+  padding: 20px 48px;
   height: 100vh;
 }
 .brand {
   padding: 24px;
 }
 .logo {
-  height: 40px;
+  height: 30px;
 }
 /* .slogan {
   padding: 100px 20px;
