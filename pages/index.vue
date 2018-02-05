@@ -7,14 +7,14 @@
         </nuxt-link>
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></li>
+          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li>
         </ul>
       </div>
 
       <div class="text">
         <div class="page-subtitle">FROM SAN FRANCISCO TO WILLIAMSBURG</div>
         <div class="page-title">WELCOME HOME</div>
-        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa">APPLY NOW</a></div>
+        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY NOW</a></div>
       </div>
     </div>
     <div class="slogan">
@@ -58,7 +58,7 @@
     <div class="apply-form" id="apply-form">
       <div class="title">APPLY TO NODE</div>
       <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
-      <div class="typeform-btn"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
+      <div class="typeform-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
       <!-- <form>
         <div class="row">
           <div class="column first-name input-group" label="First name">

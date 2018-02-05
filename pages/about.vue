@@ -7,7 +7,7 @@
         </nuxt-link>
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/">HOME</nuxt-link></li>
-          <li class="navItem apply-link"><a href="/#apply-form">APPLY</a></li>
+          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li>
         </ul>
       </div>
     </div>
