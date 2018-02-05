@@ -37,7 +37,7 @@
         <div class="card column">
           <img src="~assets/photos/maomao.jpg" alt="">
           <div class="name">MAOMAO HU</div>
-          <div class="summary">XXXXXXXXXX</div>
+          <div class="summary">Maomao is a co-founder at Kora, which is focused on bringing financial freedom to as many people as possible.</div>
         </div>
         <!-- <div class="card column">
           <img src="~assets/photos/monicaq.jpg" alt="">

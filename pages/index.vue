@@ -7,14 +7,14 @@
         </nuxt-link>
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-          <li class="navItem"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></li>
+          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></li>
         </ul>
       </div>
 
       <div class="text">
         <div class="page-subtitle">FROM SAN FRANCISCO TO WILLIAMSBURG</div>
         <div class="page-title">WELCOME HOME</div>
-        <div class="apply"><a class="apply-btn" href="#apply-form">APPLY NOW</a></div>
+        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa">APPLY NOW</a></div>
       </div>
     </div>
     <div class="slogan">
@@ -58,7 +58,7 @@
     <div class="apply-form" id="apply-form">
       <div class="title">APPLY TO NODE</div>
       <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
-      <div class="navItem"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
+      <div class="typeform-btn"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
       <!-- <form>
         <div class="row">
           <div class="column first-name input-group" label="First name">
@@ -158,6 +158,15 @@ export default {
   color: #fff;
   text-decoration: none;
 }
+.apply-btn {
+  display: inline-block;
+  padding: 24px 20px;
+  font-family: "arame-regular", sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+}
 
 .text {
   position: absolute;
@@ -181,7 +190,7 @@ export default {
 }
 .text .apply-btn {
   padding: 16px 40px;
-  height: 50px;
+  /* height: 50px; */
   background: #D90086;
   border: none;
   font-family: "arame-regular", sans-serif;
@@ -190,6 +199,33 @@ export default {
   color: #fff;
   letter-spacing: 2px;
   outline: none;
+}
+.apply-btn:hover{
+  background: #93005B;
+}
+.apply-btn:active{
+  background: #D90086;
+}
+.typeform-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  height: 50px;
+  background: #D90086;
+  border: none;
+  font-family: "arame-regular", sans-serif;
+  font-size: 1em;
+}
+.typeform-btn a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  outline: none;
+}
+.typeform-btn:hover{
+  background: #93005B;
+}
+.typeform-btn:active {
+  background: #D90086;
 }
 /* .slogan {
   padding: 100px 20px;
@@ -393,6 +429,9 @@ export default {
 @media (max-width: 425px) {
   .landing-header {
     padding: 0;
+  }
+  .apply-link{
+    display: none;
   }
 }
 </style>
