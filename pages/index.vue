@@ -2,24 +2,33 @@
   <div class="landing">
     <div class="landing-header">
       <div class="brand"><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
+      <div>
+        <div></div>
+        <div></div>
+        <a class="apply-btn" href="#apply-form">APPLY</a>
+      </div>
+
     </div>
     <div class="slogan">
       <div class="title">Blockchain Based Decentralized Space</div>
       <div class="row">
         <div class="column">
           <ul class="slogan-list">
-            <li><span>Encoded on the blockchain</span></li>
-            <li>ERC-721 token for each member</li>
+            <img src="~/assets/icon-access.png"/>
+            <li><span>Exclusive Access</span></li>
+            <li>For $200/month, you’ll have access to every node space around the world, including the first location in NYC</li>
           </ul>
         </div>
         <div class="column">
           <ul class="slogan-list">
-            <li><span>Exceptional content series for the crypto-curious</span></li>
-            <li>Access to every other Node around the world</li>
+            <img src="~/assets/icon-events.png"/>
+            <li><span>Unique Events</span></li>
+            <li>The center for blockchain and crypto</li>
           </ul>
         </div>
         <div class="column">
           <ul class="slogan-list">
+            <img src="~/assets/icon-blockchain.png"/>
             <li><span>Encoded on the blockchain</span></li>
             <li>ERC-721 token for each member</li>
           </ul>
@@ -27,20 +36,18 @@
       </div>
     </div>
     <div class="benefits">
-      <div class="title">BENEFITS</div>
-      <div class="row">
-        <div class="column">
-          <ul class="benefit-list">
-            <li>24/7 access to a shared collaboration space</li>
-            <li>Unique food and drinks</li>
-            <li>Super fast wifi</li>
-            <li>Exceptional content series for the crypto-curious</li>
-            <li>Access to every other Node around the world</li>
-          </ul>
-        </div>
+      <div class="benefits-container">
+        <div class="title">BENEFITS</div>
+        <ul class="benefit-list">
+          <li>24/7 access to a shared collaboration space</li>
+          <li>Unique food and drinks</li>
+          <li>Super fast wifi</li>
+          <li>Exceptional content series for the crypto-curious</li>
+          <li>Access to every other Node around the world</li>
+        </ul>
       </div>
     </div>
-    <div class="apply-form">
+    <div class="apply-form" id="apply-form">
       <div class="title">APPLY TO NODE</div>
       <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
       <form>
@@ -75,7 +82,7 @@
         <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
       </form>
     </div>
-    <div class="footer">Node:02 in the Node Network | <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:Origin</span></a></div>
+    <div class="footer">Part of the <a href="https://nodeworldwide.com"><span class="highlight">Node Worldwide Network</span></a></div>
   </div>
 </template>
 
@@ -105,6 +112,16 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: "arame-regular";
+  src: url("~/assets/fonts/arame-regular.woff") format("woff")
+}
+@font-face {
+  font-family: "rational-light";
+  src: url("~/assets/fonts/rational-light.woff") format("woff")
+}
+
 .row {
   display: flex;
 }
@@ -135,24 +152,71 @@ export default {
   text-decoration: none;
   color: #ccc;
 }
-.benefits {
-  padding: 60px 24px;
-  background: #ededed;
+
+
+.slogan{
+  padding: 80px 24px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.slogan .title {
+  font-family: "arame-regular", sans-serif;
+  margin-bottom: 40px;
+  padding-left: 24px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.slogan .row {
+  margin: auto;
+  max-width: 1000px;
+}
+.slogan-list {
+  padding: 0;
+  list-style: none;
+  font-family: "rational-light", sans-serif;
+}
+.slogan-list li {
+  padding: 0 24px 5px 24px;
+  font-size: .8em;
   text-align: left;
 }
-.benefits .title {
+.slogan-list img{
+  padding: 0 24px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.slogan-list li span{
+  font-family: "arame-regular", sans-serif;
+}
+
+.benefits {
+  background: #000;
+  text-align: left;
+  padding: 80px auto;
+}
+.benefits-container{
   margin: auto;
+  max-width: 1000px;
+  padding: 60px 48px;
+  color: #fff;
+}
+.benefits .title {
+  font-family: "arame-regular", sans-serif;
+  margin: 0 auto;
   margin-bottom: 40px;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 800;
-  letter-spacing: 6px;
-  max-width: 840px;
+  letter-spacing: 3px;
+  max-width: 1000px;
 }
 .benefits .row {
   margin: auto;
   max-width: 840px;
 }
 .benefit-list {
+  font-family: "rational-light", sans-serif;
   padding: 0;
   list-style: none;
 }
@@ -163,66 +227,45 @@ export default {
 }
 
 
-.slogan{
-  padding: 60px 24px;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-.slogan .title {
-  margin-bottom: 40px;
-  padding-left: 24px;
-  text-align: left;
-  font-size: 1.4em;
-  font-weight: 800;
-  letter-spacing: 6px;
-}
-.slogan .row {
-  margin: auto;
-  max-width: 1000px;
-}
-.slogan-list {
-  padding: 0;
-  list-style: none;
-}
-.slogan-list li {
-  padding: 10px 24px;
-  font-size: .9em;
-  text-align: left;
-}
-.slogan-list li span{
-  font-family: times, serif;
-}
-
 .apply-form {
   margin: auto;
-  padding: 0 10px;
-  width: 100%;
-  max-width: 500px;
+  padding: 80px 48px;
+  max-width: 1000px;
 }
-.apply-form .title {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  font-size: 1.4em;
+.apply-form .title{
+  font-family: "arame-regular", sans-serif;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: 1.5em;
   font-weight: 800;
-  letter-spacing: 6px;
-  text-align: center;
+  letter-spacing: 3px;
+  max-width: 1000px;
 }
 .apply-form .subtitle {
+  font-family: "rational-light", sans-serif;
   margin-bottom: 40px;
   font-size: .8em;
-  text-align: center;
+  text-align: left;
   color: #424242;
+}
+.apply-form .row{
+  max-width: 600px;
 }
 
 .input-group {
-  padding: 20px 10px;
+  max-width: 600px;
+  padding: 20px 0px;
   color: #424242;
 }
+.first-name{
+  padding-right: 10px;
+}
 .input-group:before {
+  font-family: "rational-light", sans-serif;
   content: attr(label);
   display: block;
   margin-bottom: 4px;
-  font-size: .8em;
+  font-size: .7em;
   line-height: 1.2em;
   color: #212121;
 }
@@ -243,11 +286,14 @@ export default {
   max-width: 60px;
 }
 .submit-btn {
-  margin: 20px 10px;
-  padding: 0 20px;
-  height: 40px;
+  font-family: "arame-regular", sans-serif;
+  margin: 20px 0px;
+  padding: 0 40px;
+  height: 50px;
   background: #D90086;
   border: none;
+  font-size: .8em;
+  letter-spacing: 2px;
   color: #fff;
   outline: none;
 }
