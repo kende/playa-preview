@@ -7,7 +7,7 @@
         </nuxt-link>
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-          <li class="navItem"><a href="#apply-form">APPLY</a></li>
+          <li class="navItem"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></li>
         </ul>
       </div>
 
@@ -58,7 +58,8 @@
     <div class="apply-form" id="apply-form">
       <div class="title">APPLY TO NODE</div>
       <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
-      <form>
+      <div class="navItem"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
+      <!-- <form>
         <div class="row">
           <div class="column first-name input-group" label="First name">
             <input class="input-box" type="text">
@@ -88,7 +89,7 @@
           <input class="input-box" type="text">
         </div>
         <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
-      </form>
+      </form> -->
     </div>
     <div class="footer">Part of the <a href="https://nodeworldwide.com"><span class="highlight">Node Worldwide Network</span></a></div>
   </div>

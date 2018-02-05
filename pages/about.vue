@@ -184,11 +184,13 @@
 }
 
 @media (max-width: 767px) {
-  .cards-wrapper .row {
+  .row {
     display: block;
+
   }
-  .card .column {
-    margin: 20px 0;
+  .column {
+    margin: 20px auto;
+    max-width: 100%;
   }
 }
 
