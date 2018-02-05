@@ -31,14 +31,14 @@
           <ul class="slogan-list">
             <img src="~/assets/icon-events.png"/>
             <li><span>Unique Events</span></li>
-            <li>The center for blockchain and crypto</li>
+            <li>Weekly events on blockchain, crypto, and more are free for members</li>
           </ul>
         </div>
         <div class="column">
           <ul class="slogan-list">
             <img src="~/assets/icon-blockchain.png"/>
             <li><span>Encoded on the blockchain</span></li>
-            <li>ERC-721 token for each member</li>
+            <li>Each member reserves their own unique ERC-721 token as proof of membership - Live with network token launch</li>
           </ul>
         </div>
       </div>
