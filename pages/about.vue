@@ -39,7 +39,7 @@
           <div class="name">MAOMAO HU</div>
           <div class="summary">XXXXXXXXXX</div>
         </div>
-        <div class="card column">
+        <!-- <div class="card column">
           <img src="~assets/photos/monicaq.jpg" alt="">
           <div class="name">MONICA QUAINTANCE</div>
           <div class="summary">XXXXXXXXXX</div>
@@ -48,9 +48,9 @@
           <img src="~assets/photos/alex.jpg" alt="">
           <div class="name">ALEX TODARO</div>
           <div class="summary">XXXXXXXXXX</div>
-        </div>
+        </div> -->
       </div>
-      <div class="cards-wrapper row">
+      <!-- <div class="cards-wrapper row">
         <div class="card column">
           <img src="~assets/photos/athena.jpg" alt="">
           <div class="name">ATHENA DIACONIS</div>
@@ -66,7 +66,7 @@
           <div class="name">TAMAR NACHMANY</div>
           <div class="summary">XXXXXXXXXX</div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="members sf">
       <div class="section-title">NODE SF</div>
@@ -169,6 +169,7 @@
 .card {
   padding: 20px;
   flex: 1;
+  max-width: 266px;
 }
 .card img {
   width: 100%;
@@ -180,6 +181,15 @@
 .summary {
   font-size: .8em;
   color: #616161;
+}
+
+@media (max-width: 767px) {
+  .cards-wrapper .row {
+    display: block;
+  }
+  .card .column {
+    margin: 20px 0;
+  }
 }
 
 .footer {

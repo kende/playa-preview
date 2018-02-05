@@ -24,7 +24,7 @@
           <ul class="slogan-list">
             <img src="~/assets/icon-access.png"/>
             <li><span>Exclusive Access</span></li>
-            <li>For $200/month, you’ll have access to every node space around the world, including the first location in NYC</li>
+            <li>For $200/month, you’ll have access to every node space around the world, including the original location in SF and the first NYC location</li>
           </ul>
         </div>
         <div class="column">
@@ -383,7 +383,7 @@ export default {
     display: block;
   }
   .slogan .column {
-    margin: 20px 0; 
+    margin: 20px 0;
   }
   .slogan-list li {
     text-align: center;
