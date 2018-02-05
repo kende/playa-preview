@@ -8,7 +8,10 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'A decentralized crypto lounge.' },
-      { property: 'og:image', content: 'https://node.nyc/_nuxt/img/glitch-bk.6cacbb8.png' }
+      { property: 'og:title', content: 'Node NYC' },
+      { property: 'og:description', content: 'A decentralized crypto lounge.' },
+      { property: 'og:image', content: 'https://node.nyc/_nuxt/img/node-fb-img.a9fc22d.png' },
+      { property: 'og:url', content: 'https://node.nyc' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/node-favicon.png' },
