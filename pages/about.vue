@@ -7,7 +7,7 @@
         </nuxt-link>
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/">HOME</nuxt-link></li>
-          <li class="navItem"><a href="/#apply-form">APPLY</a></li>
+          <li class="navItem apply-link"><a href="/#apply-form">APPLY</a></li>
         </ul>
       </div>
     </div>
@@ -191,6 +191,11 @@
   .column {
     margin: 20px auto;
     max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .apply-link{
+    display: none;
   }
 }
 
