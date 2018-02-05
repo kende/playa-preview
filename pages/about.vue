@@ -39,12 +39,12 @@
           <div class="name">MAOMAO HU</div>
           <div class="summary">Maomao is a co-founder at Kora, which is focused on bringing financial freedom to as many people as possible.</div>
         </div>
-        <!-- <div class="card column">
-          <img src="~assets/photos/monicaq.jpg" alt="">
-          <div class="name">MONICA QUAINTANCE</div>
-          <div class="summary">XXXXXXXXXX</div>
-        </div>
         <div class="card column">
+          <img src="~assets/photos/steve.jpg" alt="">
+          <div class="name">STEVE DEAN</div>
+          <div class="summary">Steve is an NYC-based superconnector who specializes in matching people to new careers, homes, workspaces, communities, and romantic partners.</div>
+        </div>
+        <!-- <div class="card column">
           <img src="~assets/photos/alex.jpg" alt="">
           <div class="name">ALEX TODARO</div>
           <div class="summary">XXXXXXXXXX</div>
