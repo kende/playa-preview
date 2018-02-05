@@ -1,13 +1,21 @@
 <template>
   <div class="landing">
     <div class="landing-header">
-      <div class="brand"><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div>
-        <div></div>
-        <div></div>
-        <a class="apply-btn" href="#apply-form">APPLY</a>
+      <div class="brand">
+        <nuxt-link to="/">
+          <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
+        </nuxt-link>
+        <ul class="navbar">
+          <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
+          <li class="navItem"><a href="#apply-form">APPLY</a></li>
+        </ul>
       </div>
 
+      <div class="text">
+        <div class="page-subtitle">FROM SAN FRANCISCO TO WILLIAMSBURG</div>
+        <div class="page-title">WELCOME HOME</div>
+        <div class="apply"><a class="apply-btn" href="#apply-form">APPLY NOW</a></div>
+      </div>
     </div>
     <div class="slogan">
       <div class="title">Blockchain Based Decentralized Space</div>
@@ -87,7 +95,7 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import axios from 'axios'
 
 export default {
   methods: {
@@ -95,51 +103,92 @@ export default {
       const el = e.target
       const value = el.value
       const lastChar = parseInt(value.slice(-1))
-      if (lastChar >= 0 && lastChar <= 9) {
-        switch (e.keyCode) {
-        case 8:
-          if (boxIndex !== 0 && value.length === 0) el.previousElementSibling.focus()
-          return
-        default:
-          if (value.length >= maxLength && boxIndex !== 2) el.nextElementSibling.focus()
-        }
-      } else {
+      switch (e.keyCode) {
+      case 8:
+        if (boxIndex !== 0 && value.length === 0) el.previousElementSibling.focus()
+        return
+      default:
+        if (value.length >= maxLength && boxIndex !== 2) el.nextElementSibling.focus()
+      }
+      if (!(lastChar >= 0 && lastChar <= 9)) {
         el.value = value.substring(0, value.length - 2)
       }
     }
+    // submit () {
+    //   axios.get('https://script.google.com/macros/s/AKfycby3hdLs2aMMlhHrZIQHRIsELEhGHksR0kBXfRTPCXwSmWOftjk/exec', { params: {Item: "Door", Cost: "$15", Stocked: "2", "Ship Date": "3/15/2016"
+    //   }})
+    // }
   }
 }
 </script>
 
 <style scoped>
-
-@font-face {
-  font-family: "arame-regular";
-  src: url("~/assets/fonts/arame-regular.woff") format("woff")
-}
-@font-face {
-  font-family: "rational-light";
-  src: url("~/assets/fonts/rational-light.woff") format("woff")
-}
-
-.row {
-  display: flex;
-}
-.column {
-  flex: 1;
-}
-
 .landing-header {
+  position: relative;
   background-image: url(~/assets/glitch-bk.png);
   background-position: center;
   background-size: cover;
+  padding: 20px 48px;
   height: 100vh;
 }
 .brand {
+  position: relative;
   padding: 24px;
 }
 .logo {
-  height: 40px;
+  height: 30px;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style: none;
+}
+.navItem {
+  display: inline-block;
+  padding: 24px 20px;
+  font-family: "arame-regular", sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+}
+.navItem a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  padding: 0 24px;
+  transform: translateY(-50%);
+}
+.page-title,
+.page-subtitle {
+  font-family: "rational-light", sans-serif;
+  font-size: 1.8em;
+  color: #fff;
+}
+.page-title {
+  font-family: "arame-regular", sans-serif;
+  font-size: 10vw;
+}
+.apply {
+  margin-top: 40px;
+}
+.text .apply-btn {
+  padding: 16px 40px;
+  height: 50px;
+  background: #D90086;
+  border: none;
+  font-family: "arame-regular", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  outline: none;
 }
 /* .slogan {
   padding: 100px 20px;
@@ -292,7 +341,7 @@ export default {
   height: 50px;
   background: #D90086;
   border: none;
-  font-size: .8em;
+  font-size: 1em;
   letter-spacing: 2px;
   color: #fff;
   outline: none;
@@ -310,10 +359,39 @@ export default {
   color: #a5a5a5;
   text-align: center;
 }
+.footer a {
+  color: #a5a5a5;
+}
 
 @media (max-width: 767px) {
+  .landing-header {
+    padding: 24px;
+  }
+  .page-title {
+    font-size: 14vw;
+    line-height: 1em;
+  }
+  .page-subtitle {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+  }
+
   .slogan {
-    font-size: 6vw;
+    text-align: center;
+  }
+  .slogan .row {
+    display: block;
+  }
+  .slogan .column {
+    margin: 20px 0; 
+  }
+  .slogan-list li {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .landing-header {
+    padding: 0;
   }
 }
 </style>
