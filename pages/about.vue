@@ -42,7 +42,7 @@
         <div class="card column">
           <img src="~assets/photos/steve.jpg" alt="">
           <div class="name">STEVE DEAN</div>
-          <div class="summary">Steve is an NYC-based superconnector who specializes in matching people to new careers, homes, workspaces, communities, and romantic partners.</div>
+          <div class="summary">Steve is an NYC-based superconnector who specializes in matching people to new careers, homes, workspaces, communities and romantic partners.</div>
         </div>
         <!-- <div class="card column">
           <img src="~assets/photos/alex.jpg" alt="">
