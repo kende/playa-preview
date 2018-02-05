@@ -91,7 +91,7 @@
         <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
       </form> -->
     </div>
-    <div class="footer">Node:02 in the Node Network | <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:01</span></a></div>
+    <div class="footer">Node:02 in the Node Network 🦄 <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:01</span></a></div>
     <div class="policies">
         <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a>
     </div>
@@ -395,12 +395,13 @@ export default {
 
 .footer {
   padding: 40px 0 0 0;
-  font-size: 12px;
-  color: #a5a5a5;
+  font-size: 10px;
+  color: #212121;
   text-align: center;
+  font-family: "rational-light", sans-serif;
 }
 .footer a {
-  color: #a5a5a5;
+  color: #212121;
   text-decoration: none;
 }
 .footer a:hover {
@@ -409,12 +410,13 @@ export default {
 
 .policies {
   padding: 5px 0 20px 0;
-  font-size: 12px;
-  color: #a5a5a5;
+  font-size: 10px;
+  color: #212121;
   text-align: center;
+  font-family: "rational-light", sans-serif;
 }
 .policies a {
-  color: #a5a5a5;
+  color: #212121;
   text-decoration: none;
 }
 .policies a:hover {
