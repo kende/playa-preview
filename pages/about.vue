@@ -105,7 +105,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">Part of the <a href="https://nodeworldwide.com"><span class="highlight">Node Worldwide Network</span></a></div>
+    <div class="footer">Node:02 in the Node Network | <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:01</span></a></div>
   </div>
 </template>
 
