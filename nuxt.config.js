@@ -3,14 +3,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'node-nyc-preview',
+    title: 'Node NYC',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'A decentralized crypto lounge.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/node-favicon.png' },
       { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
     ]
   },
