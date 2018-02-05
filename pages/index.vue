@@ -7,7 +7,7 @@
         </nuxt-link>
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-          <li class="navItem"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></li>
+          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></li>
         </ul>
       </div>
 
@@ -429,6 +429,9 @@ export default {
 @media (max-width: 425px) {
   .landing-header {
     padding: 0;
+  }
+  .apply-link{
+    display: none;
   }
 }
 </style>
