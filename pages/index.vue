@@ -14,7 +14,7 @@
       <div class="text">
         <div class="page-subtitle">FROM SAN FRANCISCO TO WILLIAMSBURG</div>
         <div class="page-title">WELCOME HOME</div>
-        <div class="apply"><a class="apply-btn" href="#apply-form">APPLY NOW</a></div>
+        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa">APPLY NOW</a></div>
       </div>
     </div>
     <div class="slogan">
