@@ -20,17 +20,17 @@
         <div class="card column">
           <img src="~assets/photos/jason.jpg" alt="">
           <div class="name">JASON KENDE</div>
-          <div class="summary">Founder of Byzantine Inc</div>
+          <div class="summary">Jason has been building community for several decades and is now co-founder and CEO of Byzantine, a new blockchain company building all things decentralized.</div>
         </div>
         <div class="card column">
           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/18767457_687065074826374_616921352001294411_n.jpg?oh=671d58a57654552f426445a7f1d77265&oe=5ADF68A2" alt="">
           <div class="name">SAM HUTCH</div>
-          <div class="summary">Founder of Byzantine Inc</div>
+          <div class="summary">Sam is a ux/product designer and co-founder of Byzantine, a new blockchain company building all things decentralized.</div>
         </div>
         <div class="card column">
           <img src="~assets/photos/layla.jpg" alt="">
           <div class="name">LAYLA TABATABAIE</div>
-          <div class="summary">XXXXXXXXXX</div>
+          <div class="summary">Layla is a New York attorney, author, and digital marketer. She's an advisor to CanYa, Bellhop, Byzantine, and Node NYC.</div>
         </div>
       </div>
       <div class="cards-wrapper row">
