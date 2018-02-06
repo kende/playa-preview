@@ -2,6 +2,7 @@
   <div class="landing">
     <div class="landing-header">
       <div class="brand">
+        <div class="thumbnail"><img src="~/assets/node-fb-img.png"></div>
         <nuxt-link to="/">
           <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
         </nuxt-link>
@@ -95,7 +96,6 @@
     <div class="policies">
         <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a>
     </div>
-    <div class="thumbnail"><img src="~/assets/node-fb-img.png"></div>
   </div>
 </template>
 
