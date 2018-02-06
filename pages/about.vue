@@ -44,11 +44,11 @@
           <div class="name">STEVE DEAN</div>
           <div class="summary">Steve is an NYC-based superconnector who specializes in matching people to new careers, homes, workspaces, communities and romantic partners.</div>
         </div>
-        <!-- <div class="card column">
-          <img src="~assets/photos/alex.jpg" alt="">
-          <div class="name">ALEX TODARO</div>
-          <div class="summary">XXXXXXXXXX</div>
-        </div> -->
+        <div class="card column">
+          <img src="~assets/photos/nadia.png" alt="">
+          <div class="name">NADIA CHILMONIK</div>
+          <div class="summary">Nadia is an expert with data, algorithms, and design. In her spare time, she also a paints, teaches machine learning, creates VR art, and is a NASA Datanaut.</div>
+        </div>
       </div>
       <!-- <div class="cards-wrapper row">
         <div class="card column">
