@@ -47,7 +47,7 @@
         <div class="card column">
           <img src="~assets/photos/nadia.png" alt="">
           <div class="name">NADIA CHILMONIK</div>
-          <div class="summary">Nadia is an expert with data, algorithms, and design. In her spare time, she also a paints, teaches machine learning, creates VR art, and is a NASA Datanaut.</div>
+          <div class="summary">Nadia is an expert with data, algorithms, and design. In her spare time, she also paints, teaches machine learning, creates VR art, and is a NASA Datanaut.</div>
         </div>
       </div>
       <!-- <div class="cards-wrapper row">
