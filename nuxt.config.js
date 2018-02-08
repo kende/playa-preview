@@ -16,6 +16,9 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/node-favicon.png' },
       { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
+    ],
+    script: [
+      { src: 'https://js.stripe.com/v3/'}
     ]
   },
   /*
