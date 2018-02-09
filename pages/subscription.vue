@@ -32,7 +32,7 @@
         <div class="input-group email-container">
           <label for="email">Email</label>
           <div class="input-box" id="email">
-            <input class="email-box" id="email-box" type="email" placeholder="Email">
+            <input class="email-box" id="email-box" type="email" placeholder="Email" v-model='email'>
           </div>
         </div>
       <button class="submit-btn">Subscribe</button>
@@ -50,6 +50,11 @@
 <script>
 import axios from 'axios'
 export default {
+  data () {
+    return {
+      email: ''
+    }
+  },
   methods: {
     getInputStyle () {
       return {
@@ -61,8 +66,12 @@ export default {
         }
       }
     },
-    submitForm () {
-      axios.get('http://localhost:9090/api/create')
+    submitForm (token) {
+      const email = this.email
+      axios.post('http://localhost:9090/api/test', { 
+        token,
+        email
+      })
       .then(function (response) {
         console.log(response);
       })
@@ -155,7 +164,8 @@ export default {
         document.getElementById('card-errors').textContent = 'Success!'
         // Send the token to your server
         // stripeTokenHandler(token)
-        console.log(token)
+        console.log('get token')
+        vm.submitForm(token)
       }
     })
 
