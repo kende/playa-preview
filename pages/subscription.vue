@@ -8,34 +8,41 @@
     <div class="container">
       <form id="payment-form">
         <div class="form-title">Credit or Debit Card</div>
+        <input type="hidden" name="token" />
         <div class="input-group">
           <label for="card-number">Card number</label>
           <div class="input-box" id="card-number"></div>
-          <div id="number-errors" role="alert"></div>
+          <!-- <div id="number-errors" role="alert"></div> -->
         </div>
         <div class="input-group">
           <label for="card-expiry">Expiration Date</label>
           <div class="input-box" id="card-expiry"></div>
-          <div id="expiry-errors" role="alert"></div>
+          <!-- <div id="expiry-errors" role="alert"></div> -->
         </div>
         <div class="input-group">
           <label for="card-cvc">CVC</label>
           <div class="input-box" id="card-cvc"></div>
-          <div id="cvc-errors" role="alert"></div>
+          <!-- <div id="cvc-errors" role="alert"></div> -->
         </div>
         <div class="input-group">
           <label for="postal-code">postal-code</label>
           <div class="input-box" id="postal-code"></div>
-          <div id="postal-code-errors" role="alert"></div>
+          <!-- <div id="postal-code-errors" role="alert"></div> -->
         </div>
         <div class="input-group email-container">
           <label for="email">Email</label>
           <div class="input-box" id="email">
-            <input class="email-box" type="email" placeholder="Email">
+            <input class="email-box" id="email-box" type="email" placeholder="Email">
           </div>
         </div>
+      <button class="submit-btn">Subscribe</button>
       </form>
-      <button class="submit-btn" @click="submitForm()">Subscribe</button>
+      <div class="outcome" id="card-errors">
+        <!-- <div class="error"></div>
+        <div class="success">
+          Success! Your Stripe token is <span class="token"></span>
+        </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -55,7 +62,7 @@ export default {
       }
     },
     submitForm () {
-      const test = axios.get('http://localhost:9090/test')
+      axios.get('http://localhost:9090/api/create')
       .then(function (response) {
         console.log(response);
       })
@@ -64,6 +71,27 @@ export default {
       })
       // console.log(test)
     }
+    // ,
+    // setOutcome(result) {
+    //   var successElement = document.querySelector('.success');
+    //   var errorElement = document.querySelector('.error');
+    //   successElement.classList.remove('visible');
+    //   errorElement.classList.remove('visible');
+
+    //   if (result.token) {
+    //     // In this example, we're simply displaying the token
+    //     successElement.querySelector('.token').textContent = result.token.id;
+    //     successElement.classList.add('visible');
+
+    //     // In a real integration, you'd submit the form with the token to your backend server
+    //     //var form = document.querySelector('form');
+    //     //form.querySelector('input[name="token"]').setAttribute('value', result.token.id);
+    //     //form.submit();
+    //   } else if (result.error) {
+    //     errorElement.textContent = result.error.message;
+    //     errorElement.classList.add('visible');
+    //   }
+    // }
   },
   mounted () {
     const vm = this
@@ -72,41 +100,64 @@ export default {
 
     // Create an instance of the card Element
     const cardNumber = elements.create('cardNumber', {})
-    const cardExpiry = elements.create('cardExpiry', {})
-    const cardCvc = elements.create('cardCvc', {})
-    const postalCode = elements.create('postalCode', {})
-
-    // Add an instance of the card Element into the `card-element` <div>
     cardNumber.mount('#card-number')
+
+    const cardExpiry = elements.create('cardExpiry', {})
     cardExpiry.mount('#card-expiry')
+
+    const cardCvc = elements.create('cardCvc', {})
     cardCvc.mount('#card-cvc')
+
+    const postalCode = elements.create('postalCode', {})
     postalCode.mount('#postal-code')
 
     // cardNumber.addEventListener('change', ({error}) => {
-    //   const displayError = document.getElementById('card-errors')
-    //   if (error) {
-    //     displayError.textContent = error.message
-    //   } else {
-    //     displayError.textContent = ''
-    //   }
+    //   document.getElementById('number-errors').textContent = error ? error.message : ''
+    // })
+    // cardExpiry.addEventListener('change', ({error}) => {
+    //   document.getElementById('expiry-errors').textContent = error ? error.message : ''
+    // })
+    // cardCvc.addEventListener('change', ({error}) => {
+    //   document.getElementById('cvc-errors').textContent = error ? error.message : ''
+    // })
+    // postalCode.addEventListener('change', ({error}) => {
+    //   document.getElementById('postal-code-errors').textContent = error ? error.message : ''
     // })
 
-    // // Create a token or display an error when the form is submitted.
-    // const form = document.getElementById('payment-form')
-    // form.addEventListener('submit', async (event) => {
-    //   event.preventDefault()
-
-    //   const {token, error} = await stripe.createToken(card)
-
-    //   if (error) {
-    //     // Inform the customer that there was an error
-    //     const errorElement = document.getElementById('card-errors')
-    //     errorElement.textContent = error.message
-    //   } else {
-    //     // Send the token to your server
-    //     stripeTokenHandler(token)
-    //   }
+    // cardNumber.on('change', function(e) {
+    //   vm.setOutcome(e)
     // })
+    // cardExpiry.on('change', function(e) {
+    //   vm.setOutcome(e)
+    // })
+    // cardCvc.on('change', function(e) {
+    //   vm.setOutcome(e)
+    // })
+
+    // Create a token or display an error when the form is submitted.
+    const form = document.getElementById('payment-form')
+    // form.addEventListener('submit', function(e) {
+    //   e.preventDefault();
+    //   var options = {
+    //     address_zip: document.getElementById('postal-code').value,
+    //   };
+    //   stripe.createToken(cardNumberElement, options).then(vm.setOutcome);
+    // })
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+
+      const {token, error} = await stripe.createToken(cardNumber)
+
+      if (error) {
+        // Inform the customer that there was an error
+        document.getElementById('card-errors').textContent = error.message
+      } else {
+        document.getElementById('card-errors').textContent = 'Success!'
+        // Send the token to your server
+        // stripeTokenHandler(token)
+        console.log(token)
+      }
+    })
 
     // const stripeTokenHandler = (token) => {
     //   // Insert the token ID into the form so it gets submitted to the server
