@@ -68,7 +68,7 @@ export default {
     },
     submitForm (token) {
       const email = this.email
-      axios.post('http://localhost:9090/api/test', { 
+      axios.post('http://18.219.134.203/api/subscribe', { 
         token,
         email
       })
@@ -78,29 +78,7 @@ export default {
       .catch(function (error) {
         console.log(error);
       })
-      // console.log(test)
     }
-    // ,
-    // setOutcome(result) {
-    //   var successElement = document.querySelector('.success');
-    //   var errorElement = document.querySelector('.error');
-    //   successElement.classList.remove('visible');
-    //   errorElement.classList.remove('visible');
-
-    //   if (result.token) {
-    //     // In this example, we're simply displaying the token
-    //     successElement.querySelector('.token').textContent = result.token.id;
-    //     successElement.classList.add('visible');
-
-    //     // In a real integration, you'd submit the form with the token to your backend server
-    //     //var form = document.querySelector('form');
-    //     //form.querySelector('input[name="token"]').setAttribute('value', result.token.id);
-    //     //form.submit();
-    //   } else if (result.error) {
-    //     errorElement.textContent = result.error.message;
-    //     errorElement.classList.add('visible');
-    //   }
-    // }
   },
   mounted () {
     const vm = this
@@ -145,13 +123,6 @@ export default {
 
     // Create a token or display an error when the form is submitted.
     const form = document.getElementById('payment-form')
-    // form.addEventListener('submit', function(e) {
-    //   e.preventDefault();
-    //   var options = {
-    //     address_zip: document.getElementById('postal-code').value,
-    //   };
-    //   stripe.createToken(cardNumberElement, options).then(vm.setOutcome);
-    // })
     form.addEventListener('submit', async (e) => {
       e.preventDefault()
 
@@ -162,25 +133,12 @@ export default {
         document.getElementById('card-errors').textContent = error.message
       } else {
         document.getElementById('card-errors').textContent = 'Success!'
+
         // Send the token to your server
-        // stripeTokenHandler(token)
         console.log('get token')
         vm.submitForm(token)
       }
     })
-
-    // const stripeTokenHandler = (token) => {
-    //   // Insert the token ID into the form so it gets submitted to the server
-    //   const form = document.getElementById('payment-form')
-    //   const hiddenInput = document.createElement('input')
-    //   hiddenInput.setAttribute('type', 'hidden')
-    //   hiddenInput.setAttribute('name', 'stripeToken')
-    //   hiddenInput.setAttribute('value', token.id)
-    //   form.appendChild(hiddenInput)
-
-    //   // Submit the form
-    //   form.submit()
-    // }
   }
 }
 </script>
