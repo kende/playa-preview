@@ -68,8 +68,8 @@ export default {
     },
     submitForm (token) {
       const email = this.email
-      axios.post('https://api.node.nyc/api/subscribe', { 
-        token,
+      axios.post('https://localhost:9090/api/subscribe', { 
+        // token,
         email
       })
       .then(function (response) {
@@ -126,18 +126,18 @@ export default {
     form.addEventListener('submit', async (e) => {
       e.preventDefault()
 
-      const {token, error} = await stripe.createToken(cardNumber)
+      // const {token, error} = await stripe.createToken(cardNumber)
 
-      if (error) {
-        // Inform the customer that there was an error
-        document.getElementById('card-errors').textContent = error.message
-      } else {
-        document.getElementById('card-errors').textContent = 'Success!'
+      // if (error) {
+      //   // Inform the customer that there was an error
+      //   document.getElementById('card-errors').textContent = error.message
+      // } else {
+      //   document.getElementById('card-errors').textContent = 'Success!'
 
-        // Send the token to your server
-        console.log('get token')
-        vm.submitForm(token)
-      }
+      //   // Send the token to your server
+      //   console.log('get token')
+        vm.submitForm('token')
+      // }
     })
   }
 }
