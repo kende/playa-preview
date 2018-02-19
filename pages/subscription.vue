@@ -68,7 +68,7 @@ export default {
     },
     submitForm (token) {
       const email = this.email
-      axios.post('http://18.219.134.203/api/subscribe', { 
+      axios.post('https://api.node.nyc/api/subscribe', { 
         token,
         email
       })
