@@ -136,7 +136,7 @@ export default {
 
         // Send the token to your server
         console.log('get token')
-        vm.submitForm('token')
+        vm.submitForm(token)
       }
     })
   }
