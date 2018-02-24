@@ -72,7 +72,7 @@ export default {
   },
   mounted () {
     const vm = this
-    const stripe = window.Stripe('pk_live_JRQOwgvHFITgLlRGHDcpzio2')
+    const stripe = window.Stripe('pk_test_9LwRCAa8O0Jk4P00ddMqMd5K')
     const elements = stripe.elements()
 
     // Create an instance of the card Element
