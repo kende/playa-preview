@@ -72,7 +72,7 @@ export default {
   },
   mounted () {
     const vm = this
-    const stripe = window.Stripe('pk_test_9LwRCAa8O0Jk4P00ddMqMd5K')
+    const stripe = window.Stripe('pk_live_JRQOwgvHFITgLlRGHDcpzio2')
     const elements = stripe.elements()
 
     // Create an instance of the card Element
@@ -119,13 +119,11 @@ export default {
       const {token, error} = await stripe.createToken(cardNumber)
 
       if (error) {
-        // Inform the customer that there was an error
         document.getElementById('card-errors').textContent = error.message
       } else {
-        document.getElementById('card-errors').textContent = 'Success!'
-
-        // Send the token to your server
         console.log('get token')
+
+        document.getElementById('card-errors').textContent = 'Success!'
         vm.submitForm(token)
       }
     })
