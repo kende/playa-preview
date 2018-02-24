@@ -56,16 +56,6 @@ export default {
     }
   },
   methods: {
-    getInputStyle () {
-      return {
-        base: {
-          border: '1px solid #212121'
-        },
-        invalid: {
-          border: '1px solid #eee'
-        }
-      }
-    },
     submitForm (token) {
       const email = this.email
       axios.post('https://api.node.nyc/api/subscribe', { 
