@@ -3,19 +3,20 @@
     <div class="landing-header">
       <div class="brand">
         <div class="thumbnail"><img src="~/assets/node-fb-img.png"></div>
-        <nuxt-link to="/">
+        <!-- <nuxt-link to="/">
           <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
-        </nuxt-link>
+        </nuxt-link> -->
         <ul class="navbar">
-          <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li>
+          <li class="navItem"><nuxt-link to="/about">About</nuxt-link></li>
+          <li class="navItem"><nuxt-link to="/about">Characters</nuxt-link></li>
+          <li class="navItem"><nuxt-link to="/about">Badges</nuxt-link></li>
         </ul>
       </div>
 
       <div class="text">
-        <div class="page-subtitle">FROM SAN FRANCISCO TO WILLIAMSBURG</div>
-        <div class="page-title">WELCOME HOME</div>
-        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY NOW</a></div>
+        <div class="page-title">Playa</div>
+        <div class="page-subtitle">Reserve your chance to join the origin quest now!</div>
+        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
       </div>
     </div>
     <div class="slogan">
@@ -130,7 +131,7 @@ export default {
 <style scoped>
 .landing-header {
   position: relative;
-  background-image: url(~/assets/glitch-bk.png);
+  background-image: url(~/assets/playa-bk.png);
   background-position: center;
   background-size: cover;
   padding: 20px 48px;
