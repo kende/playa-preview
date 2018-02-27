@@ -1,4 +1,4 @@
-# node-nyc-preview
+# playa-preview
 
 > A decentralized crypto lounge.
 
