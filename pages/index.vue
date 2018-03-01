@@ -148,13 +148,18 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
+  left: 0;
+  text-align: center;
   list-style: none;
 }
 .navItem {
   display: inline-block;
-  padding: 24px 20px;
-  font-family: "arame-regular", sans-serif;
-  font-size: 1.2em;
+  padding: 24px 25px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
   color: #fff;
   line-height: 30px;
   cursor: pointer;
@@ -175,41 +180,55 @@ export default {
 
 .text {
   position: absolute;
-  top: 50%;
+  top: 36%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin: auto;
   color: #fff;
   padding: 0 24px;
   transform: translateY(-50%);
 }
 .page-title,
 .page-subtitle {
-  font-family: "rational-light", sans-serif;
-  font-size: 1.8em;
-  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em;
+  text-align: center;
+  margin: auto;
 }
 .page-title {
   font-family: "arame-regular", sans-serif;
-  font-size: 10vw;
+  font-size: 7vw;
+  letter-spacing: .6em;
+  margin-left: .8em;
+  background: -webkit-linear-gradient(#D52427, #F58F10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page-subtitle{
+  color: #fff;
 }
 .apply {
   margin-top: 40px;
 }
 .text .apply-btn {
-  padding: 16px 40px;
+  padding: 13px 30px;
   /* height: 50px; */
-  background: #D90086;
+  background: #F58F10;
   border: none;
   font-family: "arame-regular", sans-serif;
-  font-size: 1em;
+  font-size: .9em;
   text-decoration: none;
+  border-radius: 50px;
   color: #fff;
   letter-spacing: 2px;
   outline: none;
 }
 .apply-btn:hover{
-  background: #93005B;
+  background: #D52427;
 }
 .apply-btn:active{
-  background: #D90086;
+  background: #F58F10;
 }
 .typeform-btn {
   display: inline-block;
@@ -266,7 +285,7 @@ export default {
 .slogan-list {
   padding: 0;
   list-style: none;
-  font-family: "rational-light", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 .slogan-list li {
   padding: 0 24px 5px 24px;
@@ -333,7 +352,7 @@ export default {
   max-width: 1000px;
 }
 .apply-form .subtitle {
-  font-family: "rational-light", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   margin-bottom: 40px;
   font-size: .8em;
   text-align: left;
@@ -352,7 +371,7 @@ export default {
   padding-right: 10px;
 }
 .input-group:before {
-  font-family: "rational-light", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   content: attr(label);
   display: block;
   margin-bottom: 4px;
@@ -400,7 +419,7 @@ export default {
   font-size: 10px;
   color: #212121;
   text-align: center;
-  font-family: "rational-light", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 .footer a {
   color: #212121;
@@ -415,7 +434,7 @@ export default {
   font-size: 10px;
   color: #212121;
   text-align: center;
-  font-family: "rational-light", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 .policies a {
   color: #212121;
@@ -438,12 +457,13 @@ export default {
     padding: 24px;
   }
   .page-title {
-    font-size: 14vw;
+    font-size: 10vw;
     line-height: 1em;
+    letter-spacing: .6em;
   }
   .page-subtitle {
     margin-bottom: 20px;
-    font-size: 1.4em;
+    font-size: 1em;
   }
 
   .slogan {
@@ -465,6 +485,10 @@ export default {
   }
   .apply-link{
     display: none;
+  }
+  .page-title{
+    letter-spacing: .5em;
+    margin-left: .5em;
   }
 }
 </style>

@@ -28,6 +28,9 @@ html {
   src: url("~/assets/fonts/rational-light.woff") format("woff")
 }
 
+/* Roboto Mono Import */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+
 .row {
   display: flex;
 }
