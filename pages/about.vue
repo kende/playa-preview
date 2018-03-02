@@ -2,52 +2,53 @@
   <div class="about">
     <div class="about-header">
       <div class="brand">
-        <nuxt-link to="/">
+        <!-- <nuxt-link to="/">
           <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
-        </nuxt-link>
+        </nuxt-link> -->
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/">HOME</nuxt-link></li>
-          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li>
+          <!-- <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li> -->
+          <li class="navItem"><a href="">Subscribe</a></li>
         </ul>
       </div>
     </div>
     <div class="description">
-      NODE is being created, designed and implemented as we speak. So far, these are the folks who have helped make it happen. We expect all NODE members to help us co-create amazing spaces and communities in the future.
+      Playa is...
     </div>
     <div class="members nyc">
-      <div class="section-title">NODE NYC</div>
+      <div class="section-title">Team</div>
       <div class="cards-wrapper row">
         <div class="card column">
           <img src="~assets/photos/jason.jpg" alt="">
           <div class="name">JASON KENDE</div>
-          <div class="summary">Jason has been building community for several decades and is now co-founder and CEO of Byzantine, a new blockchain company building all things decentralized.</div>
+          <div class="summary">Jason has been building community for several decades and is now co-founder and CEO of Byzantine. He's been playing games since he was a wee thing!</div>
         </div>
         <div class="card column">
           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/18767457_687065074826374_616921352001294411_n.jpg?oh=671d58a57654552f426445a7f1d77265&oe=5ADF68A2" alt="">
           <div class="name">SAM HUTCH</div>
-          <div class="summary">Sam is a UX / Product Designer and co-founder of Byzantine, a new blockchain company building all things decentralized.</div>
+          <div class="summary">Sam is a UX / Product Designer and co-founder of Byzantine. She grew up playing all the games thanks to Paul Hutch!</div>
         </div>
         <div class="card column">
-          <img src="~assets/photos/layla.jpg" alt="">
-          <div class="name">LAYLA TABATABAIE</div>
-          <div class="summary">Layla is a New York attorney, author, and digital marketer. She's an advisor to CanYa, Bellhop, Byzantine, and Node NYC.</div>
+          <img src="~assets/photos/jason.jpg" alt="">
+          <div class="name">ED ANNUNZIATA</div>
+          <div class="summary">Badass creator of Ecco the Dolphin</div>
         </div>
       </div>
       <div class="cards-wrapper row">
         <div class="card column">
-          <img src="~assets/photos/maomao.jpg" alt="">
-          <div class="name">MAOMAO HU</div>
-          <div class="summary">Maomao is a co-founder at Kora, which is focused on bringing financial freedom to as many people as possible.</div>
+          <img src="~assets/photos/jason.jpg" alt="">
+          <div class="name">PAUL HUTCH</div>
+          <div class="summary">OG game designer and developer since 1981. Worked at Microprose and Sega where he created Spiderman and Xmen games for the Sega Genesis.</div>
         </div>
         <div class="card column">
           <img src="~assets/photos/steve.jpg" alt="">
-          <div class="name">STEVE DEAN</div>
-          <div class="summary">Steve is an NYC-based superconnector who specializes in matching people to new careers, homes, workspaces, communities and romantic partners.</div>
+          <div class="name">???</div>
+          <div class="summary">...</div>
         </div>
         <div class="card column">
           <img src="~assets/photos/nadia.png" alt="">
-          <div class="name">NADIA CHILMONIK</div>
-          <div class="summary">Nadia is an expert with data, algorithms, and design. In her spare time, she also paints, teaches machine learning, creates VR art, and is a NASA Datanaut.</div>
+          <div class="name">???</div>
+          <div class="summary">...</div>
         </div>
       </div>
       <!-- <div class="cards-wrapper row">
@@ -68,7 +69,7 @@
         </div>
       </div> -->
     </div>
-    <div class="members sf">
+    <!-- <div class="members sf">
       <div class="section-title">NODE SF</div>
       <div class="cards-wrapper row">
         <div class="card column">
@@ -104,10 +105,10 @@
           <div class="summary">Kristina is an accomplished interior designer, a beauty industry entrepreneur, and sometimes fit model for Levis.</div>
         </div>
       </div>
-    </div>
-    <div class="footer">Node:02 in the Node Network 🦄 <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:01</span></a></div>
+    </div> -->
+    <div class="footer">Product of <a href="https://byzantine.network"><span class="highlight">Byzantine</span></a> 🦄 </div>
     <div class="policies">
-        <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a>
+        <!-- <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a> -->
     </div>
   </div>
 </template>
@@ -118,17 +119,17 @@
 <style scoped>
 .about-header {
   position: relative;
-  background: #000;
-  padding: 20px 48px;
+  background: #fff;
+  padding: 80px 48px;
 }
-.brand {
+/* .brand {
   position: relative;
   padding: 24px;
 }
 .logo {
   height: 30px;
-}
-.navbar {
+} */
+/* .navbar {
   position: absolute;
   top: 0;
   right: 0;
@@ -145,6 +146,30 @@
 }
 .navItem a {
   color: #fff;
+  text-decoration: none;
+} */
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  list-style: none;
+}
+.navItem {
+  display: inline-block;
+  padding: 24px 25px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+  color: #000;
+  line-height: 30px;
+  cursor: pointer;
+}
+.navItem a {
+  color: #000;
   text-decoration: none;
 }
 

@@ -8,8 +8,9 @@
         </nuxt-link> -->
         <ul class="navbar">
           <li class="navItem"><nuxt-link to="/about">About</nuxt-link></li>
-          <li class="navItem"><nuxt-link to="/about">Characters</nuxt-link></li>
-          <li class="navItem"><nuxt-link to="/about">Badges</nuxt-link></li>
+          <li class="navItem"><a href="">Subscribe</a></li>
+          <!-- <li class="navItem"><nuxt-link to="/about">Characters</nuxt-link></li>
+          <li class="navItem"><nuxt-link to="/about">Badges</nuxt-link></li> -->
         </ul>
       </div>
 
@@ -19,33 +20,36 @@
         <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
       </div>
     </div>
+    <div class="summary">
+      <div class="title">What is Playa?</div>
+      <div class="subtitle">Playa is...</div>
+    </div>
     <div class="slogan">
-      <div class="title">Blockchain Based Decentralized Space</div>
       <div class="row">
         <div class="column">
           <ul class="slogan-list">
-            <img src="~/assets/icon-access.png"/>
-            <li><span>Exclusive Access</span></li>
-            <li>For $200/month, you’ll have access to every node space around the world, including the original location in SF and the first NYC location</li>
+            <li><img src="~/assets/build_icon.png"/></li>
+            <li><span>Build</span></li>
+            <li>your own crypto economy</li>
           </ul>
         </div>
         <div class="column">
           <ul class="slogan-list">
-            <img src="~/assets/icon-events.png"/>
-            <li><span>Unique Events</span></li>
-            <li>Weekly events on blockchain, crypto, and more are free for members</li>
+            <li><img class="bike" src="~/assets/bike_icon.png"/></li>
+            <li><span>Explore</span></li>
+            <li>the playa and contribute art</li>
           </ul>
         </div>
         <div class="column">
           <ul class="slogan-list">
-            <img src="~/assets/icon-blockchain.png"/>
-            <li><span>Encoded on the blockchain</span></li>
-            <li>Each member reserves their own unique ERC-721 token as proof of membership - Live with network token launch</li>
+            <li><img src="~/assets/badge_icon.png"/></li>
+            <li><span>Train</span></li>
+            <li>your character and build special skills</li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="benefits">
+    <!-- <div class="benefits">
       <div class="benefits-container">
         <div class="title">BENEFITS</div>
         <ul class="benefit-list">
@@ -56,11 +60,12 @@
           <li>Access to every other Node around the world</li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <div class="apply-form" id="apply-form">
-      <div class="title">APPLY TO NODE</div>
+      <!-- <div class="title">APPLY TO NODE</div> -->
       <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
-      <div class="typeform-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
+      <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
+      <!-- <div class="apply-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div> -->
       <!-- <form>
         <div class="row">
           <div class="column first-name input-group" label="First name">
@@ -93,9 +98,9 @@
         <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
       </form> -->
     </div>
-    <div class="footer">Node:02 in the Node Network 🦄 <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:01</span></a></div>
+    <div class="footer">Product of <a href="https://byzantine.network"><span class="highlight">Byzantine</span></a> 🦄 </div>
     <div class="policies">
-        <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a>
+        <!-- <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a> -->
     </div>
   </div>
 </template>
@@ -129,6 +134,9 @@ export default {
 </script>
 
 <style scoped>
+.landing{
+  background: #000;
+}
 .landing-header {
   position: relative;
   background-image: url(~/assets/playa-bk.png);
@@ -210,8 +218,9 @@ export default {
 }
 .apply {
   margin-top: 40px;
+  text-align: center;
 }
-.text .apply-btn {
+.apply-btn {
   padding: 13px 30px;
   /* height: 50px; */
   background: #F58F10;
@@ -224,20 +233,27 @@ export default {
   letter-spacing: 2px;
   outline: none;
 }
+.apply-btn a{
+    text-decoration: none;
+    color: #fff;
+}
 .apply-btn:hover{
   background: #D52427;
 }
 .apply-btn:active{
   background: #F58F10;
 }
-.typeform-btn {
-  display: inline-block;
-  padding: 16px 40px;
-  height: 50px;
-  background: #D90086;
+/* .typeform-btn {
+  padding: 13px 30px;
+  background: #F58F10;
   border: none;
   font-family: "arame-regular", sans-serif;
-  font-size: 1em;
+  font-size: .9em;
+  text-decoration: none;
+  border-radius: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+  outline: none;
 }
 .typeform-btn a{
   text-decoration: none;
@@ -250,7 +266,7 @@ export default {
 }
 .typeform-btn:active {
   background: #D90086;
-}
+} */
 /* .slogan {
   padding: 100px 20px;
   font-family: 'Archivo Black', sans-serif;
@@ -263,20 +279,33 @@ export default {
   /* color: #ccc; */
 }
 
-
-.slogan{
-  padding: 80px 24px;
+.summary{
+  padding: 100px 24px;
   margin: 0 auto;
   max-width: 1000px;
+  color: #fff;
 }
-.slogan .title {
+.summary .title {
   font-family: "arame-regular", sans-serif;
-  margin-bottom: 40px;
-  padding-left: 24px;
-  text-align: left;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
   font-size: 1.5em;
   font-weight: 800;
   letter-spacing: 2px;
+}
+.summary .subtitle{
+  font-family: 'Roboto Mono', monospace;
+  margin: auto;
+  font-size: .8em;
+  text-align: center;
+}
+
+.slogan{
+  padding: 100px 24px;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: #fff;
 }
 .slogan .row {
   margin: auto;
@@ -284,20 +313,26 @@ export default {
 }
 .slogan-list {
   padding: 0;
+  margin: auto;
   list-style: none;
   font-family: 'Roboto Mono', monospace;
 }
 .slogan-list li {
   padding: 0 24px 5px 24px;
   font-size: .8em;
-  text-align: left;
+  text-align: center;
 }
 .slogan-list img{
   padding: 0 24px;
-  margin-bottom: 5px;
-  height: 30px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+img.bike{
+  margin-left: 20px;
 }
 .slogan-list li span{
+  font-size: 1.5em;
+  letter-spacing: .2em;
   font-family: "arame-regular", sans-serif;
 }
 
@@ -341,6 +376,7 @@ export default {
   margin: auto;
   padding: 80px 48px;
   max-width: 1000px;
+  color: #fff;
 }
 .apply-form .title{
   font-family: "arame-regular", sans-serif;
@@ -355,8 +391,7 @@ export default {
   font-family: 'Roboto Mono', monospace;
   margin-bottom: 40px;
   font-size: .8em;
-  text-align: left;
-  color: #424242;
+  text-align: center;
 }
 .apply-form .row{
   max-width: 600px;
@@ -417,12 +452,12 @@ export default {
 .footer {
   padding: 40px 0 0 0;
   font-size: 10px;
-  color: #212121;
+  color: #fff;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
 .footer a {
-  color: #212121;
+  color: #fff;
   text-decoration: none;
 }
 .footer a:hover {
@@ -473,7 +508,7 @@ export default {
     display: block;
   }
   .slogan .column {
-    margin: 20px 0;
+    margin: 50px 0;
   }
   .slogan-list li {
     text-align: center;
@@ -483,6 +518,14 @@ export default {
   .landing-header {
     padding: 0;
   }
+  .navbar{
+    margin: auto;
+    padding: 0;
+  }
+  .navItem {
+    padding: 24px 20px;
+    letter-spacing: .1em;
+}
   .apply-link{
     display: none;
   }
