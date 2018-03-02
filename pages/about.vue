@@ -5,11 +5,10 @@
         <!-- <nuxt-link to="/">
           <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
         </nuxt-link> -->
-        <ul class="navbar">
+        <!-- <ul class="navbar">
           <li class="navItem"><nuxt-link to="/">HOME</nuxt-link></li>
-          <!-- <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li> -->
-          <li class="navItem"><a href="">Subscribe</a></li>
-        </ul>
+          <li class="navItem"><nuxt-link to="/about">ABOUT</nuxt-link></li>
+        </ul> -->
       </div>
     </div>
     <div class="description">

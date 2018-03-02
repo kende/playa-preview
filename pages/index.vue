@@ -6,12 +6,12 @@
         <!-- <nuxt-link to="/">
           <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
         </nuxt-link> -->
-        <ul class="navbar">
+        <!-- <ul class="navbar">
+          <li class="navItem"><nuxt-link to="/">Home</nuxt-link></li>
           <li class="navItem"><nuxt-link to="/about">About</nuxt-link></li>
-          <li class="navItem"><a href="">Subscribe</a></li>
-          <!-- <li class="navItem"><nuxt-link to="/about">Characters</nuxt-link></li>
-          <li class="navItem"><nuxt-link to="/about">Badges</nuxt-link></li> -->
-        </ul>
+          <li class="navItem"><nuxt-link to="/about">Characters</nuxt-link></li>
+          <li class="navItem"><nuxt-link to="/about">Badges</nuxt-link></li>
+        </ul> -->
       </div>
 
       <div class="text">
