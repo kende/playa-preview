@@ -2,7 +2,7 @@
   <div class="landing">
     <div class="landing-header">
       <div class="brand">
-        <div class="thumbnail"><img src="~/assets/node-fb-img.png"></div>
+        <div class="thumbnail"><img src="~/assets/playa-fbimage.png"></div>
         <!-- <nuxt-link to="/">
           <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
         </nuxt-link> -->
@@ -70,8 +70,14 @@
           <input type="email" placeholder="email" @keypress='emailChange' v-model='email' required>
           <button @click='submit'>Subscribe</button>
         </div>
-        <div class="success-msg">{{successMsg}}</div>
         <div class="error-msg">{{errorMsg}}</div>
+      </div>
+      <div class='success-popup'>
+        <div class='popup-body'>
+          <div class='popup-title'>Success!</div>
+          <div class='popup-text'>Keep an eye out for update on Playa and the origin quest soon</div>
+          <button class='close-btn' @click='closePopup'>OK</button>
+        </div>
       </div>
       <!-- <div class="apply-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div> -->
       <!-- <form>
@@ -121,10 +127,13 @@ export default {
     return {
       email: '',
       errorMsg: '',
-      successMsg: ''
     }
   },
   methods: {
+    closePopup () {
+      const el = document.querySelector('.success-popup')
+      el.className = 'success-popup'
+    },
     emailChange () {
       this.errorMsg = !this.validEmail(this.email) ? 'Valid email required.' : ''
     },
@@ -133,7 +142,7 @@ export default {
       return re.test(email)
     },
     addEmailToSubscriptionList () {
-      const vm = this
+      const el = document.querySelector('.success-popup')
       axios({
         url: "https://api.node.nyc/api/playaSubscrption",
         method: 'post',
@@ -144,7 +153,7 @@ export default {
       .then(function(response) {
         if (response) {
           console.log(response)
-          vm.successMsg = 'Subscribed successfully!'
+          el.className += ' active'
         }
       })
       .then(function(error) {
@@ -600,15 +609,57 @@ img.bike{
 .subscription-form button:hover {
   background: #D52427;
 }
-.success-msg,
 .error-msg {
   margin-top: 4px;
   font-size: 12px;
   text-align: left;
   color: #D52427;
 }
-.success-msg {
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+}
+.success-popup.active {
+  display: block;
+}
+.popup-body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 40px 24px;
+  width: 90%;
+  max-width: 500px;
+  background: radial-gradient(ellipse at bottom, #d11e20 1%, #800942);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto Mono', monospace;
+}
+.popup-title {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.popup-text {
+  margin: 30px auto;
+  max-width: 400px;
+}
+.close-btn {
+  padding: 13px 30px;
+  height: 40px;
+  min-width: 120px;
+  background: #F58F10;
+  border: none;
+  font-size: .9em;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: "arame-regular", sans-serif;
   color: #fff;
+  letter-spacing: 4px;
+  outline: none;
 }
 
 @media (max-width: 425px) {

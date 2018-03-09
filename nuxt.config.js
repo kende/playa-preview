@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'A decentralized crypto game.' },
       { property: 'og:title', content: 'Playa' },
       { property: 'og:description', content: 'A decentralized crypto game.' },
-      { property: 'og:image', content: '' },
+      { property: 'og:image', content: 'https://playa.network/_nuxt/img/playa-fbimage.7372f13.png' },
       { property: 'og:url', content: 'https://playa.network' }
     ],
     link: [
