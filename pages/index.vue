@@ -65,6 +65,14 @@
       <!-- <div class="title">APPLY TO NODE</div> -->
       <div class="subtitle">Reserve your chance to join the origin quest now!</div>
       <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
+      <div class="subscription-form">
+        <div class="subscription-group">
+          <input type="email" @keypress='emailChange' v-model='email' required>
+          <button @click='submit'>Subscribe</button>  
+        </div>
+        <div class="success-msg">{{successMsg}}</div>
+        <div class="error-msg">{{errorMsg}}</div>
+      </div>
       <!-- <div class="apply-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div> -->
       <!-- <form>
         <div class="row">
@@ -109,26 +117,47 @@
 import axios from 'axios'
 
 export default {
+  data() {
+    return {
+      email: '',
+      errorMsg: '',
+      successMsg: ''
+    }
+  },
   methods: {
-    phoneValidator (e, maxLength, boxIndex) {
-      const el = e.target
-      const value = el.value
-      const lastChar = parseInt(value.slice(-1))
-      switch (e.keyCode) {
-      case 8:
-        if (boxIndex !== 0 && value.length === 0) el.previousElementSibling.focus()
-        return
-      default:
-        if (value.length >= maxLength && boxIndex !== 2) el.nextElementSibling.focus()
-      }
-      if (!(lastChar >= 0 && lastChar <= 9)) {
-        el.value = value.substring(0, value.length - 2)
+    emailChange () {
+      this.errorMsg = !this.validEmail(this.email) ? 'Valid email required.' : '' 
+    },
+    validEmail:function(email) {
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      return re.test(email)
+    },
+    addEmailToSubscriptionList () {
+      const vm = this
+      axios({
+        url: "https://api.node.nyc/api/playaSubscrption",
+        method: 'post',
+        data: {
+          "email": this.email
+        }
+      })
+      .then(function(response) {
+        if (response) {
+          console.log(response)
+          vm.successMsg = 'Subscribed successfully!'
+        }
+      })
+      .then(function(error) {
+        if (error) console.log(error)
+      })
+    },
+    submit () {
+      if (this.validEmail(this.email)) {
+        this.addEmailToSubscriptionList()
+      } else {
+        console.log('Valid email required.')
       }
     }
-    // submit () {
-    //   axios.get('https://script.google.com/macros/s/AKfycby3hdLs2aMMlhHrZIQHRIsELEhGHksR0kBXfRTPCXwSmWOftjk/exec', { params: {Item: "Door", Cost: "$15", Stocked: "2", "Ship Date": "3/15/2016"
-    //   }})
-    // }
   }
 }
 </script>
@@ -514,6 +543,57 @@ img.bike{
     text-align: center;
   }
 }
+
+.subscription-form {
+  margin: 40px auto 0;
+  height: 40px;
+  max-width: 500px;
+  font-family: 'Roboto Mono', monospace;
+}
+.subscription-group { 
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.subscription-form input { 
+  flex: 1;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, .4);
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+}
+.subscription-form button { 
+  flex: 0;
+  margin-left: 10px;
+  padding: 13px 20px;
+  height: 100%;
+  background: #F58F10;
+  border: none;
+  font-family: "arame-regular", sans-serif;
+  font-size: .9em;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.subscription-form button:hover {
+  background: #D52427;
+}
+.success-msg,
+.error-msg {
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: left;
+  color: #D52427;
+}
+.success-msg {
+  color: #fff;
+}
+
 @media (max-width: 425px) {
   .landing-header {
     padding: 0;
