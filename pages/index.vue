@@ -63,7 +63,7 @@
     </div> -->
     <div class="apply-form" id="apply-form">
       <!-- <div class="title">APPLY TO NODE</div> -->
-      <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
+      <div class="subtitle">Reserve your chance to join the origin quest now!</div>
       <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
       <!-- <div class="apply-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div> -->
       <!-- <form>
