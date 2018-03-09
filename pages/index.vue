@@ -17,7 +17,7 @@
       <div class="text">
         <div class="page-title">Playa</div>
         <div class="page-subtitle">Reserve your chance to join the origin quest now!</div>
-        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
+        <div class="apply"><a class="apply-btn" href="#apply-form">Ready playa?</a></div>
       </div>
     </div>
     <div class="summary">
@@ -64,11 +64,11 @@
     <div class="apply-form" id="apply-form">
       <!-- <div class="title">APPLY TO NODE</div> -->
       <div class="subtitle">Reserve your chance to join the origin quest now!</div>
-      <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div>
+      <!-- <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">Ready playa?</a></div> -->
       <div class="subscription-form">
         <div class="subscription-group">
-          <input type="email" @keypress='emailChange' v-model='email' required>
-          <button @click='submit'>Subscribe</button>  
+          <input type="email" placeholder="email" @keypress='emailChange' v-model='email' required>
+          <button @click='submit'>Subscribe</button>
         </div>
         <div class="success-msg">{{successMsg}}</div>
         <div class="error-msg">{{errorMsg}}</div>
@@ -126,7 +126,7 @@ export default {
   },
   methods: {
     emailChange () {
-      this.errorMsg = !this.validEmail(this.email) ? 'Valid email required.' : '' 
+      this.errorMsg = !this.validEmail(this.email) ? 'Valid email required.' : ''
     },
     validEmail:function(email) {
       const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -390,7 +390,7 @@ img.bike{
   max-width: 840px;
 }
 .benefit-list {
-  font-family: "rational-light", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   padding: 0;
   list-style: none;
 }
@@ -516,6 +516,23 @@ img.bike{
   opacity: 0;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-family: 'Roboto Mono', monospace;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  font-family: 'Roboto Mono', monospace;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+  font-family: 'Roboto Mono', monospace;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+  font-family: 'Roboto Mono', monospace;
+}
+
 @media (max-width: 767px) {
   .landing-header {
     padding: 24px;
@@ -550,12 +567,12 @@ img.bike{
   max-width: 500px;
   font-family: 'Roboto Mono', monospace;
 }
-.subscription-group { 
+.subscription-group {
   display: flex;
   justify-content: space-between;
   height: 100%;
 }
-.subscription-form input { 
+.subscription-form input {
   flex: 1;
   padding: 0 10px;
   background: rgba(255, 255, 255, .4);
@@ -565,7 +582,7 @@ img.bike{
   color: #fff;
   outline: none;
 }
-.subscription-form button { 
+.subscription-form button {
   flex: 0;
   margin-left: 10px;
   padding: 13px 20px;
