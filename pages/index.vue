@@ -144,7 +144,7 @@ export default {
     addEmailToSubscriptionList () {
       const el = document.querySelector('.success-popup')
       axios({
-        url: "https://api.node.nyc/api/playaSubscrption",
+        url: "https://api.node.nyc/api/subscrption/playa",
         method: 'post',
         data: {
           "email": this.email
