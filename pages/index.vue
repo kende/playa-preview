@@ -179,6 +179,44 @@
       </div>
     </div>  
 
+    <div class="unicorn-with-alien">
+      <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
+      <div class="dialog-boxes">
+        <div class="unicorn-box">
+          <div class="dialog-name">PI THE UNICORN</div>
+          <p class="dialog-p">Hi Bloop! Can you tell our new friends about how you get around the multiverse?</p>
+        </div>
+        <div class="whale-box">
+          <div class="dialog-name">BLOOP THE ALIEN</div>
+          <p class="dialog-p">Here on Playa owning a piece of the multiverse map called a Space Quest Tile allows you to own land, Otherwise you have to earn it. Space Quest Tiles give you early access, the more you have the more you can build and share land with your friends, you can even ask them to pay rent. If you want to live a nomadic lifestyle you can sell your Space Quest Tiles and get Bright in return! Bright is an in-game Token that can be exchanged for other cryptocurrencies. You can also collect bright by completing some quests!</p>
+        </div>
+      </div>
+      <div class="whale-wrap">
+        <img class="whale" src="~/assets/alien.png" alt="whale in the water">
+      </div>
+    </div>  
+
+    <div class="final-unicorn">
+      <div class="unicorn-wrap">
+        <div class="dialog-box">
+          <div class="dialog-name">PI THE UNICORN</div>
+          <p class="dialog-p">Welcome to Playa! <br> We hope to see you soon!</p>
+        </div>
+        <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
+      </div>
+    </div>  
+
+    <div class="button-group">
+      <div class="text">Check out our first quest here</div>
+      <button class="ready-btn">READY PLAYA?</button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-item"><a href="http://byzantine.network/">a byzantine thing</a> 🦄</div>
+      <div class="footer-item"><a href="https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e" target="_blank">privacy policy</a> &amp; <a href="https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1" target="_blank">terms</a></div>
+    </footer>
+
+
     <!-- ---------------- -->
     <!-- <div class="summary">
       <div class="title">What is Playa?</div>
@@ -465,7 +503,10 @@ export default {
 .unicorn-with-whale .unicorn-wrap,
 .unicorn-with-human .unicorn-wrap,
 .unicorn-with-other .unicorn-wrap,
-.unicorn-with-rothko .unicorn-wrap {
+.unicorn-with-rothko .unicorn-wrap,
+.unicorn-with-team .unicorn-wrap,
+.unicorn-with-alien .unicorn-wrap,
+.final-unicorn .unicorn-wrap {
   flex: 0 0 auto;
   position: static;
   width: 15%;
@@ -514,14 +555,6 @@ export default {
   margin: 10% auto 0;
   max-width: 90%;
 }
-
-.unicorn-with-team .unicorn-wrap {
-  flex: 0 0 auto;
-  position: static;
-  width: 30%;
-  transform: translateX(0);
-  filter: none;
-}
 .unicorn-with-team .unicorn {
   margin-left: 18%;
   width: 60%;
@@ -567,6 +600,71 @@ export default {
 .team-desc {
   margin: 0 auto;
   font-family: 'Roboto Mono', monospace;
+}
+
+.unicorn-with-alien {
+  display: flex;
+  margin: 38% auto 0;
+  max-width: 90%;
+}
+
+.final-unicorn {
+  margin-top: 10%;
+  text-align: center;
+}
+.final-unicorn .unicorn-wrap {
+  margin: 0 auto;
+}
+.final-unicorn .dialog-box {
+  position: static;
+  margin-left: -26%;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  padding: 40px 0;
+  color: #f86bcf;
+  text-align: center;
+  background: black;
+}
+.button-group .text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+}
+.ready-btn {
+  margin: 20px 0 0;
+  height: 36px;
+  width: 200px;
+  background: #f86bcf;
+  border: none;
+  font-family: "arame-regular", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  padding:  16px 0;
+  background: black;
+  text-align: right;
+  flex-flow: wrap;
+  justify-content: flex-end;
+  color: #fff;
+}
+.footer-item {
+  margin: 8px 24px;
+  font-size: .8em;
+  font-family: rational-light, sans-serif;
+  text-align: center;
+}
+.footer-item a {
+  text-decoration: none;
+  color: #fff;
+  word-spacing: 0px;
+}
+.footer-item a:hover {
+  text-decoration: underline;
 }
 
 /* ************************* */
