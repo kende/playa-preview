@@ -67,7 +67,7 @@
           <div class="inner"></div>
           <div class="hexagons-title">STATS</div>
           <p class="hexagons-text">Baby Whale Shark</p>
-          <p class="hexagons-text">Likes shells & singing</p>
+          <p class="hexagons-text">Likes shells &amp; singing</p>
           <p class="hexagons-text">17 weeks old</p>
           <p class="hexagons-text">13 hearts</p>
         </div>
@@ -226,14 +226,14 @@
   /* height: 1000vh; */
   background-image: url('~/assets/background.png');
   background-size: 100% auto;
-  background-position: 0 40vw;
+  background-position: 0 80vh;
   background-repeat: no-repeat;
 }
 .banner {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 58vw;
+  height: 100vh;
   background: #e5e5fa;
 }
 .banner-image {
@@ -244,7 +244,7 @@
 }
 .page-title {
   position: absolute;
-  top: 28vw;
+  top: 50%;
   width: 100%;
   background: linear-gradient(180deg, #00eeff 25%, #1510ff, #ff00f6 78%);
   background-clip: text;
@@ -257,7 +257,11 @@
   transform: translateY(-50%);
 }
 
-.welcome-unicorn,
+.welcome-unicorn {
+  position: relative;
+  margin-top: 20vh;
+  text-align: center;
+}
 .explaining-unicorn,
 .device-unicorn {
   position: relative;
