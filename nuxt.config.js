@@ -16,9 +16,6 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/playa-favicon.png' },
       { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
-    ],
-    script: [
-      { src: 'https://js.stripe.com/v3/'}
     ]
   },
   /*
