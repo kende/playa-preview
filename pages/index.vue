@@ -72,8 +72,9 @@
           <p class="hexagons-text">13 hearts</p>
         </div>
         <img class="whale" src="~/assets/whaley-water.png" alt="whale in the water">
+        <img class="whale not-in-water" src="~/assets/whaley.png" alt="whale">
       </div>
-    </div>  
+    </div>
 
     <div class="unicorn-with-human">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
@@ -82,15 +83,15 @@
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hi Rifka! I'm showing new friends around! Can you tell them about your camp setup?</p>
         </div>
-        <div class="whale-box">
+        <div class="human-box">
           <div class="dialog-name">RIFKA THE HUMAN</div>
           <p class="dialog-p">Sure, for now I am just setting up my personal tent with some items I have gained in quests, but soon I'll add more land to my Camp and start building a guild camp! I can't wait! Once I do that I can invite my friends to live in my camp with mw and we can build things together like art pieces and cars!</p>
         </div>
       </div>
-      <div class="whale-wrap">
-        <img class="whale" src="~/assets/rifka.png" alt="whale in the water">
+      <div class="human-wrap">
+        <img class="human" src="~/assets/rifka.png" alt="human image">
       </div>
-    </div>  
+    </div>
 
     <div class="unicorn-with-other">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
@@ -99,19 +100,19 @@
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hey y'all! What's new?</p>
         </div>
-        <div class="whale-box">
+        <div class="lion-box">
           <div class="dialog-name">JOHN THE LION</div>
           <p class="dialog-p">Hi, PI! We were just discussing our latest adventures! I have been working on my fire spinning and my business! I have a new shop down in the marketplace! I sell fire items and weapons for fighting Lucids!</p>
         </div>
-        <div class="whale-box">
+        <div class="astronaut-box">
           <div class="dialog-name">CHRIS THE ASTRONAUT</div>
           <p class="dialog-p">And I have been tring to make it to the next plannet! It has taken a lot of Quests to build my spaceship and gather gear but I am close!</p>
         </div>
       </div>
       <div class="whale-wrap">
-        <img class="whale" src="~/assets/lion.png" alt="whale in the water">
+        <img class="lion" src="~/assets/lion.png" alt="lion">
         <br>
-        <img class="whale" src="~/assets/astronaut.png" alt="whale in the water">
+        <img class="astronaut" src="~/assets/astronaut.png" alt="astronaut">
       </div>
     </div>
 
@@ -122,15 +123,15 @@
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Oh Hi Rothko!</p>
         </div>
-        <div class="whale-box">
+        <div class="rothko-box">
           <div class="dialog-name">ROTHKO THE DOG</div>
           <p class="dialog-p">BARK!</p>
         </div>
       </div>
-      <div class="whale-wrap">
-        <img class="whale" src="~/assets/rothko.png" alt="whale in the water">
+      <div class="rothko-wrap">
+        <img class="rothko" src="~/assets/rothko.png" alt="rothko">
       </div>
-    </div>  
+    </div> 
 
     <div class="unicorn-with-team">
       <div class="unicorn-wrap">
@@ -141,60 +142,62 @@
         <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
       </div>
       <div class="team-wrap">
-
         <div class="name-row">
           <div class="name-column">
             <div class="team-member">JASON</div>
-            <div class="team-desc">Community <br>& Coding</div>
+            <div class="team-desc">Community<br>&amp; Coding</div>
           </div>
           <div class="name-column">
             <div class="team-member">NADIA</div>
-            <div class="team-desc">Data science <br>& AI</div>
+            <div class="team-desc">Data science<br>&amp; AI</div>
           </div>
           <div class="name-column">
             <div class="team-member">SAM</div>
-            <div class="team-desc">Design <br>& Gaming</div>
+            <div class="team-desc">Design<br>&amp; Gaming</div>
           </div>
         </div>
-        <img class="whale" src="~/assets/team.png" alt="whale in the water">
+
+        <img class="team" src="~/assets/team.png" alt="team">
+
         <div class="name-row left">
           <div class="name-column">
             <div class="team-member">MICHAEL</div>
-            <div class="team-desc">Community <br>& Operations</div>
+            <div class="team-desc">Community<br>&amp; Operations</div>
           </div>
           <div class="name-column">
             <div class="team-member">ED</div>
-            <div class="team-desc">Character Design <br>& Game Dev</div>
+            <div class="team-desc">Character Design<br>&amp; Game Dev</div>
           </div>
           <div class="name-column">
             <div class="team-member">PAUL</div>
-            <div class="team-desc">Gaming & <br> Blockchain Dev</div>
+            <div class="team-desc">Gaming &amp;<br>Blockchain Dev</div>
           </div>
           <div class="name-column">
             <div class="team-member">BEARIES</div>
-            <div class="team-desc">Front End & Blockchain Dev</div>
+            <div class="team-desc">Front End &amp;<br>Blockchain Dev</div>
           </div>
         </div>
-
       </div>
-    </div>  
+    </div>
 
     <div class="unicorn-with-alien">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
-      <div class="dialog-boxes">
-        <div class="unicorn-box">
+      <div class="unicorn-box">
+        <div class="box-container">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hi Bloop! Can you tell our new friends about how you get around the multiverse?</p>
         </div>
-        <div class="whale-box">
+      </div>
+      <div class="alien-box">
+        <div class="box-container">
           <div class="dialog-name">BLOOP THE ALIEN</div>
           <p class="dialog-p">Here on Playa owning a piece of the multiverse map called a Space Quest Tile allows you to own land, Otherwise you have to earn it. Space Quest Tiles give you early access, the more you have the more you can build and share land with your friends, you can even ask them to pay rent. If you want to live a nomadic lifestyle you can sell your Space Quest Tiles and get Bright in return! Bright is an in-game Token that can be exchanged for other cryptocurrencies. You can also collect bright by completing some quests!</p>
         </div>
       </div>
-      <div class="whale-wrap">
-        <img class="whale" src="~/assets/alien.png" alt="whale in the water">
+      <div class="alien-wrap">
+        <img class="alien" src="~/assets/alien.png" alt="alien">
       </div>
-    </div>  
+    </div> 
 
     <div class="final-unicorn">
       <div class="unicorn-wrap">
@@ -209,7 +212,7 @@
     <div class="button-group">
       <div class="text">Check out our first quest here</div>
       <button class="ready-btn">READY PLAYA?</button>
-    </div>
+    </div> 
 
     <footer class="footer">
       <div class="footer-item"><a href="http://byzantine.network/">a byzantine thing</a> 🦄</div>
@@ -221,18 +224,16 @@
 <script></script>
 
 <style scoped>
-
 .landing {
-  /* height: 1000vh; */
   background-image: url('~/assets/background.png');
   background-size: 100% auto;
   background-position: 0 80vh;
   background-repeat: no-repeat;
+  transition: all 1s;
 }
 .banner {
   position: relative;
   width: 100%;
-  overflow: hidden;
   height: 100vh;
   background: #e5e5fa;
 }
@@ -257,31 +258,26 @@
   transform: translateY(-50%);
 }
 
-.welcome-unicorn {
-  position: relative;
-  margin-top: 20vh;
-  text-align: center;
-}
+.welcome-unicorn,
 .explaining-unicorn,
 .device-unicorn {
   position: relative;
-  margin-top: 8%;
+  margin-top: 14vw;
   text-align: center;
-}
+} 
 .explaining-unicorn {
-  margin-top: 30%;
+  margin-top: 30vw;
 }
 .device-unicorn {
-  margin-top: 20%;
+  margin-top: 18vw;
 }
-
 
 .unicorn-wrap {
   position: absolute;
   bottom: 45%;
   left: 50%;
   transform: translateX(-50%);
-  width: 15%;
+  width: 15vw;
   filter: drop-shadow(0 0 20px rgba(0, 231, 250, .8));
 }
 
@@ -299,7 +295,7 @@
   margin-left: 40px;
   padding: 16px 20px;
   width: 304px;
-  background: rgba(250, 250, 245, .5);
+  background: rgba(250, 250, 245, .7);
   text-align: left;
   border: 1px solid #212121;
   color: #212121;
@@ -310,7 +306,7 @@
   font-family: "arame-regular", sans-serif;
 }
 .dialog-p {
-  margin-top: 16px;
+  margin-top: 1vw;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -322,30 +318,27 @@
 }
 
 .cloud-layer {
-  margin-top: 8%;
+  margin-top: 8vw;
 }
 .cloud-single {
   margin-left: 10%;
-  width: 25%;
+  height: 8vw;
 }
 .device-unicorn .cloud-single {
   position: absolute;
   margin-left: 10px;
   height: 60px;
   width: auto;
-
 }
 
 .hexagons {
   position: relative;
-  margin-top: -200px;
-  margin-left: -20px;
-  padding: 30px 0;
-  width: 270px;
-  height: 270px;
+  margin-top: -17vw;
+  padding: 3vw 2vw;
   text-align: center;
   color: #f86bcf;
   z-index: 2;
+  width: 18vw;
 }
 .hexagons .outer,
 .hexagons .inner {
@@ -363,15 +356,15 @@
   top: 3px;
   left: 3px;
   background: yellow;
-  height: 264px;
-  width: 264px;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
 }
 .hexagons-title {
-  margin: 20px 0;
+  margin: 1vw 0;
   font-family: "arame-regular", sans-serif;
 } 
 .hexagons-text {
-  margin: 20px 0;
+  margin: 1vw 0;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -380,14 +373,17 @@
 .unicorn-with-other,
 .unicorn-with-rothko {
   display: flex;
-  margin: 24% auto 0;
-  max-width: 90%;
+  margin: 22vw auto 0;
+  max-width: 96%;
 }
 
-.unicorn-with-human,
+.unicorn-with-human {
+  margin-top: 24vw;
+}
+
 .unicorn-with-other,
 .unicorn-with-rothko {
-  margin-top: 20%;
+  margin-top: 16vw;
 }
 
 .unicorn-with-whale .unicorn-wrap,
@@ -399,35 +395,45 @@
 .final-unicorn .unicorn-wrap {
   flex: 0 0 auto;
   position: static;
-  width: 15%;
+  width: 15vw;
   transform: translateX(0);
   filter: none;
 }
 .unicorn-with-whale .whale-wrap,
-.unicorn-with-human .whale-wrap,
-.unicorn-with-other .whale-wrap,
-.unicorn-with-rothko .whale-wrap  {
+.unicorn-with-human .human-wrap,
+.unicorn-with-other .lion-wrap,
+.unicorn-with-other .astronaut-wrap,
+.unicorn-with-rothko .rothko-wrap  {
   flex: 0 0 auto;
-  width: 20%;
+  width: 20vw;
 }
 .whale-wrap .whale {
-  margin-top: 20%;
-  width: 100%;
+  margin-top: 1vw;
+  width: 90%;
 }
-.unicorn-with-human .whale,
-.unicorn-with-other .whale,
-.unicorn-with-rothko .whale {
-  margin-top: 20%;
+.unicorn-with-human .human,
+.unicorn-with-other .lion,
+.unicorn-with-rothko .rothko {
+  margin-top: 10vw;
   width: 80%;
+}
+
+.unicorn-with-other .astronaut {
+  margin-top: 4vw;
+  width: 70%;
 }
 
 
 .dialog-boxes .unicorn-box,
-.dialog-boxes .whale-box {
-  margin-left: 40px;
-  padding: 16px 20px;
-  width: 304px;
-  background: rgba(250, 250, 245, .5);
+.dialog-boxes .whale-box,
+.dialog-boxes .human-box,
+.dialog-boxes .lion-box,
+.dialog-boxes .astronaut-box,
+.dialog-boxes .rothko-box {
+  margin-left: 3vw;
+  padding: 2vw;
+  width: 42vw;
+  background: rgba(250, 250, 245, .7);
   border: 1px solid #212121;
   color: #212121;
   letter-spacing: .1em;
@@ -435,18 +441,26 @@
 .dialog-boxes .unicorn-box {
   margin-right: 18vw;
 }
-.dialog-boxes .whale-box {
-  margin-top: 20px;
+.dialog-boxes .whale-box,
+.dialog-boxes .human-box,
+.dialog-boxes .lion-box,
+.dialog-boxes .astronaut-box,
+.dialog-boxes .rothko-box {
+  margin-top: 2vw;
   margin-left: 18vw;
 }
 
 .unicorn-with-team {
   display: flex;
   margin: 10% auto 0;
-  max-width: 90%;
+  padding: 0 2%;
+}
+.unicorn-with-team .unicorn-wrap {
+  flex: 0 0 auto;
+  width: 28vw;
+  text-align: center;
 }
 .unicorn-with-team .unicorn {
-  margin-left: 18%;
   width: 60%;
 }
 .unicorn-with-team .unicorn-box {
@@ -458,6 +472,7 @@
   border: 1px solid #212121;
   color: #212121;
   letter-spacing: .1em;
+  text-align: left;
 }
 
 .unicorn-with-team .team-wrap {
@@ -468,20 +483,46 @@
   width: 100%;
 }
 
+
 .name-row {
   margin: 10px 0;
   display: flex;
   text-align: center;
 }
 .name-row.left {
-  margin-left: 5%;
+  margin-left: 4%;
 }
 .name-column {
   flex: 0 0 auto;
-  width: 24%;
+  width: 23%;
 }
 .left .name-column {
-  width: 26%;
+  width: 25%;
+}
+
+.team-member {
+  font-family: "arame-regular", sans-serif;
+}
+.team-desc {
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.name-row {
+  margin: 10px 0;
+  display: flex;
+  text-align: center;
+}
+.name-row.left {
+  margin-left: 8%;
+}
+.name-column {
+  flex: 0 0 auto;
+  padding: 0 6px;
+  width: 23%;
+}
+.left .name-column {
+  width: 25%;
 }
 
 .team-member {
@@ -494,44 +535,52 @@
 
 .unicorn-with-alien {
   display: flex;
-  margin: 38% auto 0;
-  max-width: 90%;
+  margin: auto;
+  padding:  38% 2% 0;
+  max-width: 100%;
+}
+.unicorn-box,
+.alien-box {
+  margin: 0 1vw;
+  width: 42vw;
+  color: #212121;
+  letter-spacing: .1em;
+}
+.box-container {
+  padding: 20px;
+  background: #ccc;
+  border: 1px solid #212121;
+}
+.unicorn-box {
+  width: 28vw;
+}
+.alien-box {
+  width: 38vw;
+}
+.alien-wrap {
+  width: 15vw;
+}
+.alien-wrap .alien {
+  width: 90%;
 }
 
 .final-unicorn {
-  margin-top: 10%;
-  text-align: center;
-}
-.final-unicorn .unicorn-wrap {
-  margin: 0 auto;
-}
-.final-unicorn .dialog-box {
-  position: static;
-  margin-left: -26%;
-  margin-bottom: 20px;
-}
-
-.button-group {
-  padding: 40px 0;
-  color: #f86bcf;
+  padding-top: 10vw;
   text-align: center;
   background: black;
 }
-.button-group .text {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.2em;
+.final-unicorn .unicorn-wrap {
+  margin: 0 auto;
+  width: auto;
 }
-.ready-btn {
-  margin: 20px 0 0;
-  height: 36px;
-  width: 200px;
-  background: #f86bcf;
-  border: none;
-  font-family: "arame-regular", sans-serif;
-  font-size: 1em;
-  color: #fff;
-  outline: none;
+.final-unicorn .unicorn {
+  width: 15vw;
 }
+.final-unicorn .dialog-box {
+  position: static;
+  margin: 0 auto 20px;
+  width: 248px;
+} 
 
 .footer {
   display: flex;
@@ -555,5 +604,239 @@
 }
 .footer-item a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1023px) {
+  .welcome-unicorn,
+  .device-unicorn {
+    text-align: left;
+  }
+  .explaining-unicorn {
+    text-align: right;
+  }
+  .unicorn-wrap {
+    left: 12%;
+    transform: translateX(0);
+  }
+  .explaining-unicorn .unicorn-wrap {
+    left: auto;
+    right: 12%;
+  }
+  .dialog-box {
+    width: 60vw;
+  }
+  .hexagons {
+    padding: 1vw 2vw;
+    font-size: .9em;
+  }
+  .hexagons .outer,
+  .hexagons .inner {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .dialog-boxes .unicorn-box {
+    margin-right: 10vw;
+    width: 50vw;
+  }
+  .dialog-boxes .whale-box,
+  .dialog-boxes .human-box,
+  .dialog-boxes .lion-box,
+  .dialog-boxes .astronaut-box,
+  .dialog-boxes .rothko-box {
+    margin-left: 5vw;
+    width: 55vw;
+  }
+}
+
+@media (max-width: 953px) {
+  .unicorn-with-human, 
+  .unicorn-with-other, 
+  .unicorn-with-rothko {
+    margin-top: 10vw;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 819px) {
+  .unicorn-with-human, 
+  .unicorn-with-other, 
+  .unicorn-with-rothko {
+    margin-top: 8vw;
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing {
+    background-position: 0 100vh;
+  }
+  .welcome-unicorn,
+  .device-unicorn {
+    text-align: left;
+  }
+  .explaining-unicorn {
+    text-align: right;
+  }
+  .unicorn-wrap {
+    bottom: 28%;
+    left: 4%;
+    transform: translateX(0);
+  }
+  .explaining-unicorn .unicorn-wrap {
+    left: auto;
+    right: 5%;
+    bottom: 35%;
+  }
+  .dialog-box {
+    width: 72vw;
+  }
+  .cloud-layer {
+    display: none;
+  }
+
+  .hexagons {
+    margin-top: 10vw;
+  }
+
+  .unicorn-with-team {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .unicorn-with-team .unicorn-wrap {
+    width: 100%;
+  }
+  .unicorn-with-team .unicorn {
+    width: 15vw;
+  }
+  .unicorn-with-team .team-wrap {
+    margin: 40px auto;
+    padding-left: 0;
+    width: 90%;
+  }
+
+  .unicorn-with-team {
+    padding: 20px 2%;
+    background: #c99162;
+  }
+
+  .unicorn-with-alien {
+    margin: auto;
+    padding-top: 15vw;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: black;
+  }
+  .unicorn-box {
+    flex: none;
+    width: 58vw;
+  }
+  .alien-box {
+    flex: none;
+    padding-left: 20vw;
+    width: 78vw;
+  }
+}
+
+.button-group {
+  padding: 80px 0;
+  color: #f86bcf;
+  text-align: center;
+  background: black;
+}
+.button-group .text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+}
+.ready-btn {
+  margin: 20px 0 0;
+  height: 36px;
+  width: 200px;
+  background: #f86bcf;
+  border: none;
+  font-family: "arame-regular", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  outline: none;
+}
+
+.whale.not-in-water {
+  display: none;
+  opacity: 0;
+}
+
+@media (max-width: 624px) {
+  .landing {
+    background-image: url('~/assets/background-mobile.png');
+  }
+  .welcome-unicorn {
+    margin-top: 50vw;
+  }
+  .explaining-unicorn {
+    margin-top: 40vw;
+  }
+  .device-unicorn,
+  .unicorn-with-whale{
+    margin-top: 30vw;
+  }
+  .unicorn-with-human {
+    margin-top: 20vw;
+  }
+
+  .unicorn-with-whale .unicorn-wrap {
+    padding-top: 20%;
+  }
+  .unicorn-with-whale .unicorn-box {
+    margin-left: -10vw;
+  }
+  .unicorn-with-whale .whale-box {
+    margin-left: 0;
+  }
+  .hexagons {
+    margin-left: 5px;
+    width: 25vw;
+  }
+
+  .dialog-box {
+    margin-left: 6px;
+    width: 78vw;
+  }
+  .explaining-unicorn .dialog-box {
+    margin-right: 6px;
+  }
+}
+@media (max-width: 425px) {
+  .welcome-unicorn {
+    margin-top: 20vw;
+  }
+  .unicorn-with-whale {
+    margin-top: 50vw;
+  }
+  .unicorn-with-other,
+  .unicorn-with-rothko {
+    position: relative;
+    width: 100%;
+  }
+  .unicorn-with-other:before,
+  .unicorn-with-rothko:before {
+    content: '';
+    position: absolute;
+    left: -2%;
+    top: 0;
+    width: calc(100vw + 1px);
+    height: calc(100% + 16vw);
+    background: #c99162;
+    z-index: -1;
+  }
+}
+@media (max-width: 372px) {
+  .whale {
+    display: none;
+    opacity: 0;
+  }
+  .whale.not-in-water {
+    display: block;
+    opacity: 1;
+  }
 }
 </style>
