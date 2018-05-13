@@ -412,7 +412,8 @@
   width: 90%;
 }
 .unicorn-with-human .human,
-.unicorn-with-other .lion {
+.unicorn-with-other .lion,
+.unicorn-with-rothko .rothko {
   margin-top: 5vw;
   width: 80%;
 }
