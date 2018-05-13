@@ -405,19 +405,21 @@
 .unicorn-with-other .astronaut-wrap,
 .unicorn-with-rothko .rothko-wrap  {
   flex: 0 0 auto;
-  width: 20vw;
+  width: 18vw;
 }
 .whale-wrap .whale {
   margin-top: 1vw;
   width: 90%;
 }
 .unicorn-with-human .human,
-.unicorn-with-other .lion,
-.unicorn-with-rothko .rothko {
-  margin-top: 10vw;
+.unicorn-with-other .lion {
+  margin-top: 5vw;
   width: 80%;
 }
-
+.unicorn-with-human .human,
+.unicorn-with-rothko .rothko {
+  margin-top: 10vw;
+}
 .unicorn-with-other .astronaut {
   margin-top: 4vw;
   width: 70%;
