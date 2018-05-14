@@ -12,11 +12,11 @@
       </div>
     </div>
 
-    <div class="welcome-unicorn">
+    <div class="welcome-unicorn popup-container">
       <img class="cloud" src="~/assets/cloud.png" alt="cloud">
       <div class="unicorn-wrap">
         <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
-        <div class="dialog-box">
+        <div class="dialog-box popup-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hi! I am 3.14159 the Univorn, but you can call me PI!</p>
           <p class="dialog-p">I live on planet Playa in the Byzantine Multiverse, let me show you around!</p>
@@ -24,11 +24,11 @@
       </div>
     </div>  
 
-    <div class="explaining-unicorn">
+    <div class="explaining-unicorn popup-container">
       <img class="cloud" src="~/assets/cloud.png" alt="cloud">
       <div class="unicorn-wrap">
         <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
-        <div class="dialog-box">
+        <div class="dialog-box popup-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Here on Playa our favorite things to do are build things with our friends, learn new skills, battle Lucids, and go on Quests!</p>
         </div>
@@ -37,21 +37,21 @@
     
     <div class="cloud-layer"><img class="cloud-single" src="~/assets/cloud-single.png" alt="cloud single"></div>
 
-    <div class="device-unicorn">
+    <div class="device-unicorn popup-container">
       <img class="cloud" src="~/assets/cloud.png" alt="cloud">
       <img class="cloud-single" src="~/assets/cloud-single.png" alt="cloud single">
       <div class="unicorn-wrap">
         <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
-        <div class="dialog-box">
+        <div class="dialog-box popup-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">We exist in a mobile game coming out on IOS and Android and assisted by blockchain technology. That makes us immortal! Once you create a character you can change it, but we never disappear, in fact we can play in other game worlds on the same blockchain!</p>
         </div>
       </div>
     </div>
 
-    <div class="unicorn-with-whale">
+    <div class="unicorn-with-whale popup-container">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
-      <div class="dialog-boxes">
+      <div class="dialog-boxes popup-box">
         <div class="unicorn-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hi Whaley! How did you get 13 hearts??</p>
@@ -76,9 +76,9 @@
       </div>
     </div>
 
-    <div class="unicorn-with-human">
+    <div class="unicorn-with-human popup-container">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
-      <div class="dialog-boxes">
+      <div class="dialog-boxes popup-box">
         <div class="unicorn-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hi Rifka! I'm showing new friends around! Can you tell them about your camp setup?</p>
@@ -93,9 +93,9 @@
       </div>
     </div>
 
-    <div class="unicorn-with-other">
+    <div class="unicorn-with-other popup-container">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
-      <div class="dialog-boxes">
+      <div class="dialog-boxes popup-box">
         <div class="unicorn-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hey y'all! What's new?</p>
@@ -116,9 +116,9 @@
       </div>
     </div>
 
-    <div class="unicorn-with-rothko">
+    <div class="unicorn-with-rothko popup-container">
       <div class="unicorn-wrap"><img class="unicorn" src="~/assets/unicorn.png" alt="unicorn"></div>
-      <div class="dialog-boxes">
+      <div class="dialog-boxes popup-box">
         <div class="unicorn-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Oh Hi Rothko!</p>
@@ -133,9 +133,9 @@
       </div>
     </div> 
 
-    <div class="unicorn-with-team">
+    <div class="unicorn-with-team popup-container">
       <div class="unicorn-wrap">
-        <div class="unicorn-box">
+        <div class="unicorn-box popup-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Hey ByzanTeam! There are the people behind Byzantine! They are designing and coding Playa and making building the smart contracts and tokens that run it!</p>
         </div>
@@ -199,9 +199,9 @@
       </div>
     </div> 
 
-    <div class="final-unicorn">
+    <div class="final-unicorn popup-container">
       <div class="unicorn-wrap">
-        <div class="dialog-box">
+        <div class="dialog-box popup-box">
           <div class="dialog-name">PI THE UNICORN</div>
           <p class="dialog-p">Welcome to Playa! <br> We hope to see you soon!</p>
         </div>
@@ -221,7 +221,35 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    handleScroll () {
+      if (window.pageYOffset % 10 === 0) {
+        for(let idx in this.pos) {
+          console.log(idx)
+          if ((window.pageYOffset + window.innerHeight * 0.6) > this.pos[idx] + 20) {
+            this.els[idx].querySelector('.popup-box').style.opacity = 1
+          } else {
+            this.els[idx].querySelector('.popup-box').style.opacity = 0
+            break
+          }
+        }
+      }
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+
+    this.els = document.querySelectorAll('.popup-container')
+    this.pos = []
+
+    for(let el of this.els) {
+      this.pos.push(el.getBoundingClientRect().top)
+    }
+  }
+}
+</script>
 
 <style scoped>
 .landing {
@@ -841,5 +869,10 @@
     display: block;
     opacity: 1;
   }
+}
+
+.popup-box {
+  opacity: 0;
+  transition: opacity .4s;
 }
 </style>
