@@ -211,8 +211,7 @@
 
     <div class="button-group">
       <div class="text">Check out our first quest here</div>
-      </div>
-      <a href="https://byzantine.network/spacequest/getspace/" class="ready-btn">READY PLAYA?</a>
+      <a class="ready-btn" href="https://byzantine.network/spacequest/getspace">READY PLAYA?</a>
     </div>
 
     <footer class="footer">
@@ -781,7 +780,8 @@ export default {
   font-size: 1.2em;
 }
 .ready-btn {
-  margin: 20px 0 0;
+  display: block;
+  margin: 20px auto 0;
   height: 36px;
   width: 200px;
   background: #f86bcf;
@@ -790,6 +790,8 @@ export default {
   font-size: 1em;
   color: #fff;
   outline: none;
+  line-height: 36px;
+  text-decoration: none;
 }
 
 .whale.not-in-water {
