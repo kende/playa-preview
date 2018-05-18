@@ -22,7 +22,7 @@
           <p class="dialog-p">I live on planet Playa in the Byzantine Multiverse, let me show you around!</p>
         </div>
       </div>
-    </div>  
+    </div>
 
     <div class="explaining-unicorn popup-container">
       <img class="cloud" src="~/assets/cloud.png" alt="cloud">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="cloud-layer"><img class="cloud-single" src="~/assets/cloud-single.png" alt="cloud single"></div>
 
     <div class="device-unicorn popup-container">
@@ -131,7 +131,7 @@
       <div class="rothko-wrap">
         <img class="rothko" src="~/assets/rothko.png" alt="rothko">
       </div>
-    </div> 
+    </div>
 
     <div class="unicorn-with-team popup-container">
       <div class="unicorn-wrap">
@@ -197,7 +197,7 @@
       <div class="alien-wrap">
         <img class="alien" src="~/assets/alien.png" alt="alien">
       </div>
-    </div> 
+    </div>
 
     <div class="final-unicorn popup-container">
       <div class="unicorn-wrap">
@@ -207,11 +207,12 @@
         </div>
         <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
       </div>
-    </div>  
+    </div>
 
     <div class="button-group">
       <div class="text">Check out our first quest here</div>
       <button class="ready-btn">READY PLAYA?</button>
+      <a href="https://byzantine.network/spacequest/getspace/" class="ready-btn">
     </div> 
 
     <footer class="footer">
@@ -292,7 +293,7 @@ export default {
   position: relative;
   margin-top: 14vw;
   text-align: center;
-} 
+}
 .explaining-unicorn {
   margin-top: 30vw;
 }
@@ -390,7 +391,7 @@ export default {
 .hexagons-title {
   margin: 1vw 0;
   font-family: "arame-regular", sans-serif;
-} 
+}
 .hexagons-text {
   margin: 1vw 0;
   font-family: 'Roboto Mono', monospace;
@@ -611,7 +612,7 @@ export default {
   position: static;
   margin: 0 auto 20px;
   width: 248px;
-} 
+}
 
 .footer {
   display: flex;
@@ -681,8 +682,8 @@ export default {
 }
 
 @media (max-width: 953px) {
-  .unicorn-with-human, 
-  .unicorn-with-other, 
+  .unicorn-with-human,
+  .unicorn-with-other,
   .unicorn-with-rothko {
     margin-top: 10vw;
     font-size: .9em;
@@ -690,8 +691,8 @@ export default {
 }
 
 @media (max-width: 819px) {
-  .unicorn-with-human, 
-  .unicorn-with-other, 
+  .unicorn-with-human,
+  .unicorn-with-other,
   .unicorn-with-rothko {
     margin-top: 8vw;
     font-size: .8em;
