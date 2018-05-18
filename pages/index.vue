@@ -212,8 +212,8 @@
     <div class="button-group">
       <div class="text">Check out our first quest here</div>
       <button class="ready-btn">READY PLAYA?</button>
-      <a href="https://byzantine.network/spacequest/getspace/" class="ready-btn">
-    </div> 
+      <a href="https://byzantine.network/spacequest/getspace/" class="ready-btn">Link Button</a>
+    </div>
 
     <footer class="footer">
       <div class="footer-item"><a href="http://byzantine.network/">a byzantine thing</a> 🦄</div>
