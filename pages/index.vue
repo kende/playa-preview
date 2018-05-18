@@ -18,7 +18,7 @@
         <img class="unicorn" src="~/assets/unicorn.png" alt="unicorn">
         <div class="dialog-box popup-box">
           <div class="dialog-name">PI THE UNICORN</div>
-          <p class="dialog-p">Hi! I am 3.14159 the Univorn, but you can call me PI!</p>
+          <p class="dialog-p">Hi! I am 3.14159 the Unicorn, but you can call me PI!</p>
           <p class="dialog-p">I live on planet Playa in the Byzantine Multiverse, let me show you around!</p>
         </div>
       </div>
@@ -85,7 +85,7 @@
         </div>
         <div class="human-box">
           <div class="dialog-name">RIFKA THE HUMAN</div>
-          <p class="dialog-p">Sure, for now I am just setting up my personal tent with some items I have gained in quests, but soon I'll add more land to my Camp and start building a guild camp! I can't wait! Once I do that I can invite my friends to live in my camp with mw and we can build things together like art pieces and cars!</p>
+          <p class="dialog-p">Sure, for now I am just setting up my personal tent with some items I have gained in quests, but soon I'll add more land to my Camp and start building a guild camp! I can't wait! Once I do that I can invite my friends to live in my camp with me and we can build things together like art pieces and cars!</p>
         </div>
       </div>
       <div class="human-wrap">
@@ -106,7 +106,7 @@
         </div>
         <div class="astronaut-box">
           <div class="dialog-name">CHRIS THE ASTRONAUT</div>
-          <p class="dialog-p">And I have been tring to make it to the next plannet! It has taken a lot of Quests to build my spaceship and gather gear but I am close!</p>
+          <p class="dialog-p">And I have been trying to make it to the next planet! It has taken a lot of Quests to build my spaceship and gather gear but I am close!</p>
         </div>
       </div>
       <div class="whale-wrap">
